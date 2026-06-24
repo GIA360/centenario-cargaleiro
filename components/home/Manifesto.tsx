@@ -28,7 +28,7 @@ export function Manifesto() {
   const bg = obraSrc ? { backgroundImage: `url("${obraSrc}")` } : undefined;
 
   return (
-    <section ref={ref} className="relative h-[150vh] bg-cobaltoFundo">
+    <section ref={ref} className="relative h-[230vh] bg-cobaltoFundo">
       <div className="sticky top-0 h-screen overflow-hidden">
         {/* Obra como fundo CSS — estática (a única animação é a das letras) */}
         <div
@@ -43,11 +43,11 @@ export function Manifesto() {
         {/* Frase por cima — pt compensa o cabeçalho fixo para centrar o texto */}
         <div className="relative z-10 flex h-full items-center pt-16 sm:pt-20">
           <div className="shell">
-            <p className="max-w-4xl font-display text-[clamp(1.9rem,4.4vw,3.7rem)] font-bold leading-[1.2] tracking-[-0.015em] [text-shadow:0_2px_20px_rgba(8,10,30,0.6)] [text-wrap:balance]">
+            <p className="max-w-4xl font-display text-[clamp(1.8rem,4.2vw,3.5rem)] font-bold leading-[1.7] tracking-[-0.01em] [text-wrap:balance]">
               {PALAVRAS.map((palavra, i) => {
-                // janelas longas e sobrepostas → onda contínua, não saltos
-                const inicio = 0.04 + (i / PALAVRAS.length) * 0.6;
-                const fim = inicio + 0.22;
+                // janelas longas e muito sobrepostas → onda lenta e contínua
+                const inicio = 0.06 + (i / PALAVRAS.length) * 0.66;
+                const fim = inicio + 0.28;
                 return (
                   <Palavra
                     key={i}
@@ -80,16 +80,19 @@ function Palavra({
   progresso: MotionValue<number>;
   reduzir: boolean;
 }) {
-  const opacity = useTransform(progresso, [inicio, fim], [0.2, 1], {
+  const meio = (inicio + fim) / 2;
+  const opacity = useTransform(progresso, [inicio, fim], [0.3, 1], {
     ease: SUAVE,
   });
-  const y = useTransform(progresso, [inicio, fim], [10, 0], { ease: SUAVE });
-  const blurV = useTransform(progresso, [inicio, fim], [3, 0], { ease: SUAVE });
-  const filter = useMotionTemplate`blur(${blurV}px)`;
+  // brilho que sobe ao revelar e volta a assentar → varre palavra a palavra
+  const brilho = useTransform(progresso, [inicio, meio, fim], [0, 1, 0.1]);
+  const blur = useTransform(brilho, [0, 1], [3, 26]);
+  const alfa = useTransform(brilho, [0, 1], [0.1, 0.95]);
+  const sombra = useMotionTemplate`0 0 ${blur}px rgba(198,221,255,${alfa})`;
   return (
     <motion.span
-      style={reduzir ? { opacity: 1 } : { opacity, y, filter }}
-      className="inline-block text-white"
+      style={reduzir ? { opacity: 1 } : { opacity, textShadow: sombra }}
+      className="box-decoration-clone [-webkit-box-decoration-break:clone] bg-cobalto/70 px-2 py-1 text-white"
     >
       {texto}&nbsp;
     </motion.span>

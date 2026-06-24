@@ -1,9 +1,9 @@
 {
   "logo": "/images/biblioteca/geral/logo.png",
-  "obraDestaque": "/images/biblioteca/geral/obraDestaque.png",
+  "obraDestaque": "/images/biblioteca/geral/obraDestaque.jpg",
   "heroSobretitulo": "Comemorações do Centenário · 1927 — 2027",
-  "manifestoFrase": "Nove décadas, um legado. \nUm programa, duas vocações:\nEntre a memória e a criação, construir o futuro.",
-  "heroFrase": "Um programa, duas vocações: entre a memória e a criação, construir o futuro.",
+  "manifestoFrase": "Nove décadas a criar, um legado para programar: \nentre memória e criação, construir o futuro.",
+  "heroFrase": "Um programa, duas missões: entre memória e criação, construir o futuro.",
   "ctaPrimarioLabel": "Conhecer o programa",
   "ctaPrimarioHref": "/#programa",
   "ctaSecundarioLabel": "Cronograma",

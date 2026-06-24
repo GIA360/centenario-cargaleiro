@@ -2,16 +2,33 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { motion, useReducedMotion } from "framer-motion";
+import { useRef } from "react";
+import { motion, useMotionValue, useReducedMotion, useSpring } from "framer-motion";
 import { hero, logoSrc } from "@/content/site";
-import { BrushCanvas } from "./BrushCanvas";
+import { HeroAzulejos } from "./HeroAzulejos";
 
 export function HeroLogo() {
   const reduzir = useReducedMotion();
+  const ref = useRef<HTMLElement>(null);
+  const mx = useMotionValue(50);
+  const my = useMotionValue(42);
+  const sx = useSpring(mx, { stiffness: 90, damping: 20, mass: 0.6 });
+  const sy = useSpring(my, { stiffness: 90, damping: 20, mass: 0.6 });
+
+  function aoMover(e: React.PointerEvent) {
+    const r = ref.current?.getBoundingClientRect();
+    if (!r) return;
+    mx.set(((e.clientX - r.left) / r.width) * 100);
+    my.set(((e.clientY - r.top) / r.height) * 100);
+  }
 
   return (
-    <section className="relative flex min-h-screen flex-col items-center justify-start overflow-hidden bg-white px-5 pb-[18vh] pt-[14vh] sm:pt-[12vh]">
-      <BrushCanvas className="pointer-events-none absolute inset-0 z-0 h-full w-full" />
+    <section
+      ref={ref}
+      onPointerMove={reduzir ? undefined : aoMover}
+      className="relative flex min-h-screen flex-col items-center justify-start overflow-hidden bg-white px-5 pb-[18vh] pt-[14vh] sm:pt-[12vh]"
+    >
+      <HeroAzulejos mx={sx} my={sy} reduzir={!!reduzir} />
 
       <div className="relative z-10 flex w-full flex-col items-center text-center">
         {/* Logótipo estático (apenas um fade de entrada) */}

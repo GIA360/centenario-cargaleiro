@@ -85,34 +85,40 @@ export function TimelineInterativa() {
           ))}
         </div>
 
-        <div className="flex items-center gap-3">
-          <span className="font-sans text-sm text-cinza">
-            {eventos.length} {eventos.length === 1 ? "marco" : "marcos"}
-          </span>
-          <div className="flex gap-1.5">
-            <SetaBtn dir={-1} onClick={() => deslizar(-1)} />
-            <SetaBtn dir={1} onClick={() => deslizar(1)} />
-          </div>
-        </div>
+        <span className="font-sans text-sm text-cinza">
+          {eventos.length} {eventos.length === 1 ? "marco" : "marcos"}
+        </span>
       </div>
 
-      {/* Linha do tempo horizontal */}
-      <div
-        ref={scrollerRef}
-        onScroll={aoRolar}
-        className="relative mt-10 overflow-x-auto pb-6 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
-      >
-        <ol className="flex min-w-max gap-5 px-0.5">
-          {eventos.map((ev, i) => (
-            <EventoCard
-              key={ev.id}
-              ev={ev}
-              indice={i}
-              proximo={ev.id === proximoId}
-              reduzir={!!reduzir}
-            />
-          ))}
-        </ol>
+      {/* Linha do tempo horizontal, com setas a ladear os cards */}
+      <div className="relative mt-10">
+        <SetaBtn
+          dir={-1}
+          onClick={() => deslizar(-1)}
+          className="absolute -left-3 top-1/2 z-20 hidden -translate-y-1/2 sm:flex lg:-left-5"
+        />
+        <SetaBtn
+          dir={1}
+          onClick={() => deslizar(1)}
+          className="absolute -right-3 top-1/2 z-20 hidden -translate-y-1/2 sm:flex lg:-right-5"
+        />
+        <div
+          ref={scrollerRef}
+          onScroll={aoRolar}
+          className="overflow-x-auto pb-6 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+        >
+          <ol className="flex min-w-max gap-5 px-0.5">
+            {eventos.map((ev, i) => (
+              <EventoCard
+                key={ev.id}
+                ev={ev}
+                indice={i}
+                proximo={ev.id === proximoId}
+                reduzir={!!reduzir}
+              />
+            ))}
+          </ol>
+        </div>
       </div>
 
       {/* Barra de progresso da linha */}
@@ -256,13 +262,24 @@ function Chip({
   );
 }
 
-function SetaBtn({ dir, onClick }: { dir: 1 | -1; onClick: () => void }) {
+function SetaBtn({
+  dir,
+  onClick,
+  className,
+}: {
+  dir: 1 | -1;
+  onClick: () => void;
+  className?: string;
+}) {
   return (
     <button
       type="button"
       onClick={onClick}
       aria-label={dir === 1 ? "Avançar" : "Recuar"}
-      className="flex h-9 w-9 items-center justify-center border border-cobalto/20 text-cobalto transition-colors hover:border-cobalto hover:bg-cobalto hover:text-white"
+      className={cn(
+        "flex h-10 w-10 items-center justify-center border border-cobalto/20 bg-white text-lg text-cobalto shadow-[0_10px_30px_-12px_rgba(35,42,94,0.55)] transition-colors hover:border-cobalto hover:bg-cobalto hover:text-white",
+        className,
+      )}
     >
       {dir === 1 ? "›" : "‹"}
     </button>
