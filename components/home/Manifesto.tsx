@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef } from "react";
+import Image from "next/image";
 import {
   motion,
   useInView,
@@ -9,14 +10,15 @@ import {
   useReducedMotion,
   useSpring,
 } from "framer-motion";
-import { manifestoFrase } from "@/content/site";
+import { manifestoFrase, obraSrc } from "@/content/site";
 
 const PALAVRAS = manifestoFrase.split(" ");
 
 /**
- * Frase de destaque numa faixa cobalto compacta (sem imagem). As palavras
- * acendem em sequência ao entrar em vista; uma luz suave segue o rato e cada
- * palavra brilha ao passar por cima.
+ * Frase de destaque numa faixa cobalto compacta, com a imagem de fundo
+ * (carregada no CMS) velada pela cor da marca. As palavras acendem em
+ * sequência ao entrar em vista; uma luz suave segue o rato e cada palavra
+ * brilha ao passar por cima.
  */
 export function Manifesto() {
   const ref = useRef<HTMLElement>(null);
@@ -43,6 +45,17 @@ export function Manifesto() {
       onPointerMove={reduzir ? undefined : aoMover}
       className="relative flex min-h-[40vh] items-center overflow-hidden bg-cobaltoFundo py-14 sm:py-16"
     >
+      {obraSrc && (
+        <Image
+          src={obraSrc}
+          alt=""
+          fill
+          sizes="100vw"
+          className="object-cover"
+        />
+      )}
+      <div aria-hidden className="absolute inset-0 bg-cobaltoFundo/85" />
+
       {!reduzir && (
         <motion.div
           aria-hidden
@@ -59,7 +72,7 @@ export function Manifesto() {
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
           className="mb-7 block h-1 w-16 origin-left bg-rosa"
         />
-        <p className="max-w-5xl font-display text-[clamp(1.8rem,4vw,3.3rem)] font-bold leading-[1.3] tracking-[-0.015em] [text-wrap:balance]">
+        <p className="max-w-5xl font-display text-[clamp(1.4rem,3vw,2.5rem)] font-bold leading-[1.3] tracking-[-0.015em] [text-wrap:balance]">
           {PALAVRAS.map((palavra, i) => (
             <Palavra
               key={i}

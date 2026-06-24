@@ -4,7 +4,11 @@ import { Reveal } from "@/components/ui/Reveal";
 
 export function CronogramaSecao() {
   return (
-    <section className="bg-nevoaAzul py-20 lg:py-28">
+    <section className="relative bg-nevoaAzul py-20 lg:py-28">
+      <span
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 top-0 h-[2px] bg-gradient-to-r from-transparent via-cobalto/90 to-transparent"
+      />
       <div className="shell">
         <Reveal className="flex flex-wrap items-end justify-between gap-4">
           <div>

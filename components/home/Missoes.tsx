@@ -14,11 +14,15 @@ import { projetosPorEixo } from "@/content/projetos";
 
 export function Missoes() {
   return (
-    <section className="bg-white">
-      <div className="shell pt-20 lg:pt-28">
+    <section className="relative bg-white pb-16 lg:pb-20">
+      <span
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 top-0 h-[2px] bg-gradient-to-r from-transparent via-cobalto/90 to-transparent"
+      />
+      <div className="shell pt-14 lg:pt-20">
         <p className="eyebrow text-cobalto/70">A estrutura do programa</p>
         <h2 className="mt-3 max-w-3xl font-display text-3xl font-bold leading-tight text-cobalto sm:text-4xl lg:text-5xl">
-          Duas missões
+          Um centenário, dois pilares de programação
         </h2>
         <p className="mt-4 max-w-prosa text-pretty leading-relaxed text-cinza">
           {missoesDescricaoSeccao}
@@ -28,7 +32,7 @@ export function Missoes() {
       <div className="relative mt-12 grid md:grid-cols-2">
         <span
           aria-hidden
-          className="absolute left-1/2 top-0 z-10 hidden h-full w-[3px] -translate-x-1/2 bg-rosa md:block"
+          className="absolute left-1/2 top-0 z-10 hidden h-full w-[3px] -translate-x-1/2 bg-cobalto md:block"
         />
         {listaEixos.map((e) => (
           <MissaoColuna key={e.id} eixo={e} />

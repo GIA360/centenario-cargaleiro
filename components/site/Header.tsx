@@ -49,7 +49,7 @@ export function Header() {
       <div
         className={cn(
           "shell flex items-center justify-between gap-6 transition-all duration-300",
-          encolhido ? "py-2" : "py-2.5 lg:py-3",
+          encolhido ? "py-[11px]" : "py-3.5 lg:py-4",
         )}
       >
         {/* Esquerda: logótipo (ao descer) OU o texto do centenário (1.ª secção) */}

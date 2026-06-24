@@ -1,7 +1,10 @@
 {
   "titulo": "Nove décadas, um legado",
   "subtitulo": "Programa de Criação e Grande Exposição",
-  "eixos": ["criacao", "expositiva"],
+  "eixos": [
+    "criacao",
+    "expositiva"
+  ],
   "ancora": true,
   "local": "Centro de Exposições do Pavilhão de Portugal da Universidade de Lisboa",
   "data": "Março a julho de 2027 · Inauguração a 16 de março de 2027",
@@ -9,6 +12,8 @@
   "ordem": 2,
   "resumo": "Quatro obras musicais originais e uma grande exposição cronológica, década a década.",
   "introducao": "Um programa de criação artística original: quatro obras musicais inspiradas no percurso artístico e biográfico de Manuel Cargaleiro, articuladas com uma grande exposição cronológica organizada década a década — nove décadas, do final dos anos 40 a 2024.",
+  "imagemDestaque": "/images/biblioteca/projetos/nove-decadas-um-legado/imagemDestaque.jpg",
+  "imagemFlutuante": "/images/biblioteca/projetos/nove-decadas-um-legado/imagemFlutuante.png",
   "galeria": [],
   "descricao": [
     "No Centro de Exposições do Pavilhão de Portugal, a música e a obra visual cruzam-se num único percurso. A criação musical não ilustra a pintura: traduz em som os seus princípios formais — ritmo, repetição, fragmentação e intensidade cromática."

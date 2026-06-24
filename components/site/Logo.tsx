@@ -9,7 +9,7 @@ type Variante = "header" | "footer";
 
 // Alturas responsivas por variante (o cabeçalho é grande, ~dobro do anterior).
 const CLASSE: Record<Variante, string> = {
-  header: "h-[40px] sm:h-[46px] lg:h-[52px]",
+  header: "h-[54px] sm:h-[62px] lg:h-[70px]",
   footer: "h-[84px] lg:h-[104px]",
 };
 

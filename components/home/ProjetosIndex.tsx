@@ -28,12 +28,13 @@ export function ProjetosIndex() {
     y.set(e.clientY);
   }
 
-  // imagem flutuante: usa a flutuante (ou o banner) na proporção original
-  const previewSrc =
-    ativo !== null
-      ? lista[ativo].imagemFlutuante ?? lista[ativo].imagemDestaque
-      : null;
-  const corPreview = ativo !== null ? eixos[lista[ativo].eixos[0]].cor : undefined;
+  // pré-visualização: projeto sob o cursor, a sua imagem flutuante (ou o
+  // banner) e a cor da sua missão principal.
+  const projetoAtivo = ativo !== null ? lista[ativo] : null;
+  const eixoAtivo = projetoAtivo ? eixos[projetoAtivo.eixos[0]] : null;
+  const previewSrc = projetoAtivo
+    ? projetoAtivo.imagemFlutuante ?? projetoAtivo.imagemDestaque
+    : null;
 
   return (
     <section
@@ -41,6 +42,10 @@ export function ProjetosIndex() {
       onPointerMove={aoMover}
       className="relative bg-white py-20 lg:py-28"
     >
+      <span
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 top-0 h-[2px] bg-gradient-to-r from-transparent via-cobalto/90 to-transparent"
+      />
       <div className="shell">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -50,11 +55,11 @@ export function ProjetosIndex() {
         >
           <p className="eyebrow text-cobalto/70">Programa de comemorações</p>
           <h2 className="mt-3 font-display text-3xl font-bold leading-tight text-cobalto sm:text-4xl lg:text-5xl">
-            Os projetos do Centenário
+            As iniciativas do Centenário
           </h2>
           <p className="mt-4 max-w-prosa text-pretty leading-relaxed text-cinza">
-            Cinco iniciativas, duas missões. Passe o cursor para pré-visualizar;
-            clique para abrir.
+            Cinco iniciativas, duas missões. Passe o cursor para
+            pré-visualizar; clique para abrir.
           </p>
         </motion.div>
 
@@ -79,9 +84,9 @@ export function ProjetosIndex() {
 
                   <span className="min-w-0 flex-1">
                     <span
-                      className="block font-display text-2xl font-bold leading-[1.05] tracking-tight transition-[color,transform] duration-300 will-change-transform sm:text-4xl lg:text-5xl"
+                      className="block font-display text-xl font-bold leading-[1.05] tracking-tight transition-[color,transform] duration-300 will-change-transform sm:text-3xl lg:text-4xl"
                       style={{
-                        color: on ? eixo.cor : "#232A5E",
+                        color: on ? eixo.cor : "#16161A",
                         transform: on && !reduzir ? "translateX(14px)" : "none",
                       }}
                     >
@@ -138,16 +143,26 @@ export function ProjetosIndex() {
           >
             <div
               className="w-72 overflow-hidden border-4 shadow-[0_24px_60px_-20px_rgba(13,16,40,0.5)]"
-              style={{ borderColor: corPreview }}
+              style={{ borderColor: eixoAtivo?.cor }}
             >
               {previewSrc ? (
-                /* eslint-disable-next-line @next/next/no-img-element */
-                <img
-                  key={previewSrc}
-                  src={previewSrc}
-                  alt=""
-                  className="block h-auto w-full"
-                />
+                <div key={previewSrc} className="relative">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={previewSrc} alt="" className="block h-auto w-full" />
+                  <div
+                    className="absolute inset-x-0 bottom-0 p-4"
+                    style={{
+                      background: `linear-gradient(to top, ${eixoAtivo?.cor}E6 0%, transparent 85%)`,
+                    }}
+                  >
+                    <p className="font-sans text-[10px] font-semibold uppercase tracking-eyebrow text-white/80">
+                      {eixoAtivo?.etiqueta}
+                    </p>
+                    <p className="mt-1 font-display text-lg font-bold leading-tight text-white">
+                      {projetoAtivo?.titulo}
+                    </p>
+                  </div>
+                </div>
               ) : ativo !== null ? (
                 <div className="aspect-[4/3] w-full">
                   <ManagedImage src={null} fill />

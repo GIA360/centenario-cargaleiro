@@ -8,10 +8,10 @@ export default function HomePage() {
   return (
     <>
       <HeroLogo />
-      <Manifesto />
       <Missoes />
-      <ProjetosIndex />
       <CronogramaSecao />
+      <ProjetosIndex />
+      <Manifesto />
     </>
   );
 }

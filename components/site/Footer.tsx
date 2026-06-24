@@ -57,7 +57,7 @@ export function Footer() {
                 <h3 className="eyebrow text-cobalto/70">{grupo.titulo}</h3>
                 <ul className="mt-5 grid grid-cols-2 items-center gap-x-8 gap-y-6 sm:grid-cols-3 lg:grid-cols-6">
                   {grupo.srcs.map((src, i) => (
-                    <li key={src + i} className="flex items-center justify-center">
+                    <li key={src + i}>
                       <ManagedImage
                         src={src}
                         ratio="5 / 2"
