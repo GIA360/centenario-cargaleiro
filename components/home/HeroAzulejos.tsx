@@ -36,7 +36,7 @@ export function HeroAzulejos({
       {/* azulejos vívidos revelados à volta do rato */}
       {!reduzir && (
         <motion.div
-          className="absolute inset-0 opacity-[0.6]"
+          className="absolute inset-0 opacity-[0.7]"
           style={{ ...fundo, WebkitMaskImage: mask, maskImage: mask }}
         />
       )}

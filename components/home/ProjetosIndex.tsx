@@ -75,7 +75,7 @@ export function ProjetosIndex() {
                   onClick={() => abrir(projeto)}
                   onPointerEnter={() => setAtivo(i)}
                   onPointerLeave={() => setAtivo(null)}
-                  className="group flex w-full items-center gap-5 border-b border-cobalto/15 py-7 text-left transition-opacity duration-300 lg:gap-8 lg:py-9"
+                  className="group flex w-full items-center gap-5 border-b border-cobalto/15 py-6 text-left transition-opacity duration-300 lg:gap-8 lg:py-8"
                   style={{ opacity: dim ? 0.4 : 1 }}
                 >
                   <span className="w-10 shrink-0 font-display text-sm font-semibold text-cinza">
