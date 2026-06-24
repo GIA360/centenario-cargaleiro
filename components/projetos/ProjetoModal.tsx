@@ -35,7 +35,7 @@ function Conteudo({
   const reduzir = useReducedMotion();
   const scrollRef = useRef<HTMLDivElement>(null);
   const [lightbox, setLightbox] = useState<number | null>(null);
-  const cor = eixos[projeto.eixo].cor;
+  const cor = eixos[projeto.eixos[0]].cor;
 
   const { scrollY, scrollYProgress } = useScroll({ container: scrollRef });
   const heroY = useTransform(scrollY, [0, 600], [0, 140]);
@@ -110,13 +110,20 @@ function Conteudo({
           <div className="absolute inset-x-0 bottom-0">
             <div className="shell pb-10">
               <div>
-                <span className="inline-flex items-center gap-2 font-sans text-xs font-semibold uppercase tracking-eyebrow text-white">
-                  <span
-                    aria-hidden
-                    className="h-2.5 w-2.5"
-                    style={{ backgroundColor: cor }}
-                  />
-                  {eixos[projeto.eixo].etiqueta}
+                <span className="flex flex-wrap items-center gap-3">
+                  {projeto.eixos.map((id) => (
+                    <span
+                      key={id}
+                      className="inline-flex items-center gap-2 font-sans text-xs font-semibold uppercase tracking-eyebrow text-white"
+                    >
+                      <span
+                        aria-hidden
+                        className="h-2.5 w-2.5"
+                        style={{ backgroundColor: eixos[id].cor }}
+                      />
+                      {eixos[id].etiqueta}
+                    </span>
+                  ))}
                 </span>
                 <h2 className="mt-3 max-w-4xl font-display text-3xl font-bold leading-[1.05] text-white sm:text-5xl lg:text-6xl">
                   {projeto.titulo}
@@ -268,6 +275,16 @@ function Conteudo({
                 <ul className="space-y-1.5 text-sm text-tinta/80">
                   {projeto.parceiros.map((p) => (
                     <li key={p}>{p}</li>
+                  ))}
+                </ul>
+              </Bloco>
+            )}
+
+            {projeto.instituicoesAcervo && (
+              <Bloco titulo="Instituições representadas" root={scrollRef}>
+                <ul className="space-y-1.5 text-sm text-tinta/80">
+                  {projeto.instituicoesAcervo.map((inst) => (
+                    <li key={inst}>{inst}</li>
                   ))}
                 </ul>
               </Bloco>

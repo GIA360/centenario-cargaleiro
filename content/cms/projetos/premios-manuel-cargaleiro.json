@@ -1,25 +1,26 @@
 {
   "titulo": "Prémios Manuel Cargaleiro",
   "subtitulo": "1.ª edição",
-  "eixo": "criacao",
+  "eixos": ["criacao"],
   "ancora": false,
   "local": "Museu Cargaleiro, Castelo Branco",
   "data": "Inauguração a 9 de setembro de 2026",
   "dataOrdenacao": "2026-09-09",
   "ordem": 1,
   "resumo": "Prémios que apoiam a criação contemporânea e as novas gerações de artistas.",
-  "introducao": "No ano em que se assinala o Centenário de Manuel Cargaleiro, a Fundação inicia uma nova etapa da sua missão, reforçando o compromisso com o apoio à criação contemporânea e com a valorização das novas gerações de artistas.",
+  "introducao": "No âmbito do Programa Oficial das Comemorações do Centenário de Manuel Cargaleiro, a Fundação inicia uma nova etapa da sua missão, reforçando o compromisso com o apoio à criação contemporânea e com a valorização das novas gerações de artistas.",
   "imagemDestaque": "/images/biblioteca/projetos/premios-manuel-cargaleiro/imagemDestaque.JPG",
   "imagemFlutuante": "/images/biblioteca/projetos/premios-manuel-cargaleiro/imagemFlutuante.png",
   "galeria": [
     "/images/biblioteca/projetos/premios-manuel-cargaleiro/galeria/0.png"
   ],
   "descricao": [
-    "Inspirada pelo percurso de Manuel Cargaleiro — que construiu uma carreira internacional sem nunca perder a ligação à experimentação, à inovação e ao diálogo entre tradição e modernidade — a instituição assume como prioridade estratégica o desenvolvimento de programas que promovam novos talentos, a circulação de conhecimento e a aproximação entre artistas, instituições e públicos.",
+    "Inspirada pelo percurso de Manuel Cargaleiro — que construiu uma carreira internacional sem nunca perder a ligação à experimentação, à inovação e ao diálogo entre tradição e modernidade — a Fundação Manuel Cargaleiro assume como prioridade estratégica o desenvolvimento de programas que promovam novos talentos, a circulação de conhecimento e a aproximação entre artistas, instituições e públicos.",
     "É neste contexto que surgem os Prémios Manuel Cargaleiro, uma iniciativa desenvolvida em parceria com a Faculdade de Belas-Artes da Universidade de Lisboa e com o apoio da Câmara Municipal de Castelo Branco, destinada a incentivar a criação artística e a investigação no domínio das artes visuais.",
-    "Através das categorias Prémio Revelação, Prémio Cargaleiro e Prémio Investigação, os prémios distinguem projetos de excelência, incentivando a qualidade, a inovação e a afirmação de novos percursos criativos e académicos.",
+    "Através das categorias Prémio Revelação, Prémio Cargaleiro e Prémio Investigação, os prémios distinguem projetos de excelência, incentivando a qualidade, a inovação e a afirmação de novos percursos.",
     "A seleção dos finalistas e vencedores é assegurada por um júri independente, constituído por personalidades de reconhecido mérito no panorama artístico nacional. Na sua primeira edição, o júri integra Alexandre Farto (Vhils), Sandra Vieira Jürgens e Graça Morais.",
-    "Mais do que uma distinção, esta iniciativa afirma-se como uma plataforma de valorização, divulgação e projeção da criação contemporânea, complementada por uma exposição coletiva e pela publicação de um catálogo dedicado aos projetos selecionados."
+    "Mais do que uma distinção, esta iniciativa afirma-se como uma plataforma de valorização, divulgação e projeção da criação contemporânea, complementada por uma exposição coletiva e pela publicação de um catálogo dedicado aos projetos selecionados.",
+    "Os Prémios Manuel Cargaleiro contam com o patrocínio exclusivo da Caixa de Crédito Agrícola da Beira Baixa Sul."
   ],
   "factos": [
     {
@@ -37,8 +38,8 @@
   ],
   "objetivos": [
     "Promover a criação artística contemporânea nas artes visuais.",
-    "Incentivar a investigação no domínio das artes visuais.",
-    "Valorizar e projetar as novas gerações de artistas."
+    "Valorizar e projetar as novas gerações de artistas.",
+    "Incentivar a investigação da obra e legado de Manuel Cargaleiro."
   ],
   "parceiros": [
     "Fundação Manuel Cargaleiro",
@@ -70,7 +71,7 @@
       ]
     },
     {
-      "titulo": "A cerimónia de entrega",
+      "titulo": "A cerimónia",
       "paragrafos": [
         "A cerimónia de entrega terá lugar a 23 de outubro de 2026, na Faculdade de Belas-Artes da Universidade de Lisboa, integrando as celebrações do Dia das Belas-Artes.",
         "Concebida como um dos momentos centrais das Comemorações do Centenário, reunirá representantes institucionais, artistas, estudantes, docentes e convidados para assinalar publicamente a excelência dos trabalhos distinguidos.",
@@ -99,10 +100,6 @@
       "descricao": "Divulgação dos finalistas"
     },
     {
-      "data": "Até 03/04/2026",
-      "descricao": "Entrega das obras na FBAUL"
-    },
-    {
       "data": "09/09/2026",
       "descricao": "Inauguração no Museu Cargaleiro"
     },
@@ -112,7 +109,7 @@
     },
     {
       "data": "27/03/2027",
-      "descricao": "Inauguração da itinerância na OAMC — Seixal"
+      "descricao": "Inauguração da itinerância na Oficina de Artes Manuel Cargaleiro, no Seixal"
     }
   ],
   "indicadores": [],

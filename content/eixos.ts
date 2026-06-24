@@ -36,3 +36,5 @@ export const eixos: Record<EixoId, Eixo> = {
 };
 
 export const listaEixos: Eixo[] = [eixos.criacao, eixos.expositiva];
+
+export const missoesDescricaoSeccao: string = missoes.descricaoSeccao;

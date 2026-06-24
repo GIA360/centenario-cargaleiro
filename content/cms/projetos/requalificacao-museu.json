@@ -1,7 +1,7 @@
 {
   "titulo": "Requalificação da Exposição Permanente",
   "subtitulo": "Museu Cargaleiro",
-  "eixo": "expositiva",
+  "eixos": ["expositiva"],
   "ancora": false,
   "local": "Museu Cargaleiro, Castelo Branco (edifício contemporâneo)",
   "data": "Março de 2028",

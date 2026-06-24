@@ -1,27 +1,26 @@
 {
   "titulo": "Polo da Cerâmica do Museu Cargaleiro",
-  "subtitulo": "",
-  "eixo": "expositiva",
+  "eixos": ["expositiva"],
   "ancora": false,
-  "local": "Polo da Cerâmica do Museu Cargaleiro, Castelo Branco (antigo Quartel da GNR, Rua Vaz Preto)",
+  "local": "Museu Cargaleiro, Castelo Branco (antigo Quartel da GNR, Rua Vaz Preto)",
   "data": "9 de setembro de 2027",
   "dataOrdenacao": "2027-09-09",
   "ordem": 3,
-  "resumo": "Novo espaço dedicado à leitura, estudo e divulgação da obra cerâmica do Mestre.",
-  "introducao": "O Museu Cargaleiro inaugura, em Castelo Branco, o Polo da Cerâmica — um novo espaço dedicado integralmente à leitura, estudo e divulgação da obra cerâmica de Manuel Cargaleiro.",
+  "resumo": "Exposição de longa duração que integra a oferta expositiva do Museu Cargaleiro e promove a divulgação da obra cerâmica do Mestre.",
+  "introducao": "O Museu Cargaleiro inaugura, em Castelo Branco, o Polo da Cerâmica — uma grande exposição temporária de longa duração dedicada integralmente à leitura, estudo e divulgação da obra cerâmica de Manuel Cargaleiro.",
+  "imagemDestaque": "/images/biblioteca/projetos/polo-da-ceramica/imagemDestaque.jpg",
+  "imagemFlutuante": "/images/biblioteca/projetos/polo-da-ceramica/imagemFlutuante.jpg",
+  "galeria": [],
   "descricao": [
     "Instalado num edifício autónomo, este polo apresenta uma exposição temporária de longa duração, inteiramente composta por obras do acervo da Fundação Manuel Cargaleiro. O projeto propõe uma retrospetiva alargada da produção cerâmica do artista, permitindo uma leitura aprofundada de um dos eixos fundamentais da sua criação.",
     "A exposição articula um percurso de natureza cronológica e temática, evidenciando a evolução de uma linguagem plástica marcada pela experimentação cromática, pelo rigor compositivo e por uma constante reinvenção do diálogo entre forma, cor e matéria. A cerâmica surge aqui como território central de investigação artística, onde se cruzam tradição artesanal, modernidade formal e uma forte identidade visual.",
     "Mais do que uma apresentação de obras, o novo polo constitui um espaço de interpretação e aproximação ao processo criativo de Manuel Cargaleiro, valorizando séries, variações e núcleos de trabalho que evidenciam a continuidade e a coerência do seu percurso.",
-    "A abertura reforça a ligação do Museu Cargaleiro a Castelo Branco, aprofundando o enraizamento territorial da instituição e afirmando a cidade como lugar central na preservação, estudo e projeção do legado do artista, ao mesmo tempo que amplia a fruição pública de um acervo de elevado valor patrimonial.",
-    "A inauguração terá lugar a 9 de setembro de 2027, assinalando uma nova etapa na missão do Museu Cargaleiro."
+    "A abertura reforça a ligação do Museu Cargaleiro a Castelo Branco, aprofundando o enraizamento territorial da instituição e afirmando a cidade como lugar central na preservação, estudo e projeção do legado do artista, ao mesmo tempo que amplia a fruição pública de um acervo de elevado valor patrimonial."
   ],
-  "imagemDestaque": null,
-  "galeria": [],
   "factos": [
     {
       "rotulo": "Local",
-      "valor": "Castelo Branco (edifício autónomo)"
+      "valor": "Castelo Branco (Rua Vaz Preto, antigo Quartel da GNR)"
     },
     {
       "rotulo": "Inauguração",
@@ -29,7 +28,7 @@
     },
     {
       "rotulo": "Natureza",
-      "valor": "Exposição de longa duração"
+      "valor": "Exposição temporária de longa duração"
     }
   ],
   "objetivos": [],
@@ -41,7 +40,9 @@
   "seccoes": [],
   "cronogramaEdicao": [],
   "indicadores": [],
-  "instituicoesAcervo": [],
+  "instituicoesAcervo": [
+    "Fundação Manuel Cargaleiro"
+  ],
   "componentes": [],
   "usaCompositores": false
 }

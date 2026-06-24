@@ -7,7 +7,7 @@ export const site = {
   marca: "1927 × 2027",
   descricao:
     "Comemorações do Centenário de Manuel Cargaleiro (1927–2027). Um programa da Fundação Manuel Cargaleiro.",
-  urlBase: "https://centenariocargaleiro.pt", // a confirmar
+  urlBase: "https://centenario.fundacaomanuelcargaleiro.pt",
 };
 
 // Imagens globais (upload no CMS — secção «Geral»).

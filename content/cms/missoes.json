@@ -1,14 +1,15 @@
 {
+  "descricaoSeccao": "Cada missão ocupa metade da secção, com uma fotografia de fundo cuja transparência reage ao scroll.",
   "criacao": {
     "etiqueta": "Apoio à Criação",
     "nome": "Apoio à Criação e aos Jovens Artistas",
-    "descricao": "Produção e fomento da criação artística contemporânea: novas obras, prémios e plataformas que dão futuro à criação a partir do legado de Manuel Cargaleiro.",
-    "imagemFundo": "/images/biblioteca/missoes/criacao/imagemFundo.png"
+    "descricao": "Apoio à criação artística contemporânea: prémios, bolsas de estudo e novas plataformas que dão futuro à criação a partir do legado de Manuel Cargaleiro.",
+    "imagemFundo": "/images/biblioteca/missoes/criacao/imagemFundo.JPG"
   },
   "expositiva": {
     "etiqueta": "Programação Expositiva",
     "nome": "Programação Expositiva e Internacionalização",
     "descricao": "Exposições e circulação do legado: a obra do Mestre apresentada e estudada em novos territórios, do interior português ao circuito internacional.",
-    "imagemFundo": "/images/biblioteca/missoes/expositiva/imagemFundo.JPG"
+    "imagemFundo": "/images/biblioteca/missoes/expositiva/imagemFundo.png"
   }
 }

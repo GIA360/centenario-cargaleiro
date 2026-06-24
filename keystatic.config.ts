@@ -82,6 +82,10 @@ export default config({
       path: "content/cms/missoes",
       format: { data: "json" },
       schema: {
+        descricaoSeccao: fields.text({
+          label: "Descrição da secção (sob o título 'Duas missões')",
+          multiline: true,
+        }),
         criacao: fields.object(
           {
             etiqueta: fields.text({ label: "Etiqueta" }),
@@ -121,10 +125,10 @@ export default config({
       schema: {
         titulo: fields.slug({ name: { label: "Título" } }),
         subtitulo: fields.text({ label: "Subtítulo" }),
-        eixo: fields.select({
-          label: "Missão",
+        eixos: fields.multiselect({
+          label: "Missões",
           options: eixoOptions as any,
-          defaultValue: "expositiva",
+          defaultValue: ["expositiva"],
         }),
         ancora: fields.checkbox({ label: "Projeto-âncora", defaultValue: false }),
         local: fields.text({ label: "Local" }),
@@ -204,7 +208,7 @@ export default config({
           { label: "Indicadores (contadores)", itemLabel: (p) => p.fields.label.value },
         ),
         instituicoesAcervo: fields.array(fields.text({ label: "Instituição" }), {
-          label: "Instituições no acervo",
+          label: "Instituições representadas",
           itemLabel: (p) => p.value.slice(0, 50),
         }),
         componentes: fields.array(

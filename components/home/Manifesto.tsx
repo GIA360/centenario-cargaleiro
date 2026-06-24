@@ -2,66 +2,74 @@
 
 import { useRef } from "react";
 import {
-  cubicBezier,
   motion,
+  useInView,
   useMotionTemplate,
+  useMotionValue,
   useReducedMotion,
-  useScroll,
-  useTransform,
-  type MotionValue,
+  useSpring,
 } from "framer-motion";
-import { manifestoFrase, obraSrc } from "@/content/site";
+import { manifestoFrase } from "@/content/site";
 
 const PALAVRAS = manifestoFrase.split(" ");
-// curva suave (easeOutCubic) para a entrada das palavras
-const SUAVE = cubicBezier(0.33, 1, 0.68, 1);
 
+/**
+ * Frase de destaque numa faixa cobalto compacta (sem imagem). As palavras
+ * acendem em sequência ao entrar em vista; uma luz suave segue o rato e cada
+ * palavra brilha ao passar por cima.
+ */
 export function Manifesto() {
-  const ref = useRef<HTMLDivElement>(null);
+  const ref = useRef<HTMLElement>(null);
   const reduzir = useReducedMotion();
+  const naView = useInView(ref, { once: true, margin: "-15%" });
 
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start start", "end end"],
-  });
+  // luz subtil que segue o cursor
+  const mx = useMotionValue(50);
+  const my = useMotionValue(50);
+  const sx = useSpring(mx, { stiffness: 120, damping: 28, mass: 0.5 });
+  const sy = useSpring(my, { stiffness: 120, damping: 28, mass: 0.5 });
+  const luz = useMotionTemplate`radial-gradient(34vw 34vw at ${sx}% ${sy}%, rgba(150,172,255,0.11), transparent 60%)`;
 
-  const bg = obraSrc ? { backgroundImage: `url("${obraSrc}")` } : undefined;
+  function aoMover(e: React.PointerEvent) {
+    const r = ref.current?.getBoundingClientRect();
+    if (!r) return;
+    mx.set(((e.clientX - r.left) / r.width) * 100);
+    my.set(((e.clientY - r.top) / r.height) * 100);
+  }
 
   return (
-    <section ref={ref} className="relative h-[230vh] bg-cobaltoFundo">
-      <div className="sticky top-0 h-screen overflow-hidden">
-        {/* Obra como fundo CSS — estática (a única animação é a das letras) */}
-        <div
-          style={bg}
-          className="absolute inset-0 bg-cobaltoFundo bg-cover bg-center"
+    <section
+      ref={ref}
+      onPointerMove={reduzir ? undefined : aoMover}
+      className="relative flex min-h-[40vh] items-center overflow-hidden bg-cobaltoFundo py-14 sm:py-16"
+    >
+      {!reduzir && (
+        <motion.div
+          aria-hidden
+          className="pointer-events-none absolute inset-0"
+          style={{ background: luz }}
         />
+      )}
 
-        {/* véu para legibilidade — a obra fica visível mas mais sóbria */}
-        <div className="absolute inset-0 bg-cobaltoFundo/48" />
-        <div className="absolute inset-0 bg-gradient-to-t from-cobaltoFundo/75 via-cobaltoFundo/10 to-cobaltoFundo/40" />
-
-        {/* Frase por cima — pt compensa o cabeçalho fixo para centrar o texto */}
-        <div className="relative z-10 flex h-full items-center pt-16 sm:pt-20">
-          <div className="shell">
-            <p className="max-w-4xl font-display text-[clamp(1.8rem,4.2vw,3.5rem)] font-bold leading-[1.7] tracking-[-0.01em] [text-wrap:balance]">
-              {PALAVRAS.map((palavra, i) => {
-                // janelas longas e muito sobrepostas → onda lenta e contínua
-                const inicio = 0.06 + (i / PALAVRAS.length) * 0.66;
-                const fim = inicio + 0.28;
-                return (
-                  <Palavra
-                    key={i}
-                    texto={palavra}
-                    inicio={inicio}
-                    fim={fim}
-                    progresso={scrollYProgress}
-                    reduzir={!!reduzir}
-                  />
-                );
-              })}
-            </p>
-          </div>
-        </div>
+      <div className="shell relative">
+        <motion.span
+          aria-hidden
+          initial={{ scaleX: 0 }}
+          animate={naView ? { scaleX: 1 } : undefined}
+          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+          className="mb-7 block h-1 w-16 origin-left bg-rosa"
+        />
+        <p className="max-w-5xl font-display text-[clamp(1.8rem,4vw,3.3rem)] font-bold leading-[1.3] tracking-[-0.015em] [text-wrap:balance]">
+          {PALAVRAS.map((palavra, i) => (
+            <Palavra
+              key={i}
+              texto={palavra}
+              indice={i}
+              naView={naView}
+              reduzir={!!reduzir}
+            />
+          ))}
+        </p>
       </div>
     </section>
   );
@@ -69,30 +77,25 @@ export function Manifesto() {
 
 function Palavra({
   texto,
-  inicio,
-  fim,
-  progresso,
+  indice,
+  naView,
   reduzir,
 }: {
   texto: string;
-  inicio: number;
-  fim: number;
-  progresso: MotionValue<number>;
+  indice: number;
+  naView: boolean;
   reduzir: boolean;
 }) {
-  const meio = (inicio + fim) / 2;
-  const opacity = useTransform(progresso, [inicio, fim], [0.3, 1], {
-    ease: SUAVE,
-  });
-  // brilho que sobe ao revelar e volta a assentar → varre palavra a palavra
-  const brilho = useTransform(progresso, [inicio, meio, fim], [0, 1, 0.1]);
-  const blur = useTransform(brilho, [0, 1], [3, 26]);
-  const alfa = useTransform(brilho, [0, 1], [0.1, 0.95]);
-  const sombra = useMotionTemplate`0 0 ${blur}px rgba(198,221,255,${alfa})`;
   return (
     <motion.span
-      style={reduzir ? { opacity: 1 } : { opacity, textShadow: sombra }}
-      className="box-decoration-clone [-webkit-box-decoration-break:clone] bg-cobalto/70 px-2 py-1 text-white"
+      initial={{ opacity: reduzir ? 1 : 0.14 }}
+      animate={naView ? { opacity: 1 } : undefined}
+      transition={{
+        duration: 0.5,
+        delay: reduzir ? 0 : 0.25 + indice * 0.07,
+        ease: "easeOut",
+      }}
+      className="inline-block cursor-default text-white transition-[color,text-shadow] duration-150 ease-out hover:text-[#F4B8D0] hover:[text-shadow:0_0_16px_rgba(244,184,208,0.38)]"
     >
       {texto}&nbsp;
     </motion.span>

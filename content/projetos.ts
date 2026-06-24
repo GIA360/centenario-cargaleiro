@@ -25,7 +25,7 @@ export interface Projeto {
   slug: string;
   titulo: string;
   subtitulo?: string;
-  eixo: EixoId;
+  eixos: EixoId[];
   local: string;
   data: string;
   dataOrdenacao: string;
@@ -72,7 +72,7 @@ function toProjeto(slug: string, data: Record<string, any>): Projeto {
     slug,
     titulo: data.titulo,
     subtitulo: data.subtitulo || undefined,
-    eixo: data.eixo as EixoId,
+    eixos: (Array.isArray(data.eixos) ? data.eixos : [data.eixo]) as EixoId[],
     local: data.local,
     data: data.data,
     dataOrdenacao: data.dataOrdenacao,
@@ -108,7 +108,7 @@ export function obterProjeto(slug: string): Projeto | undefined {
 }
 
 export function projetosPorEixo(eixo: EixoId): Projeto[] {
-  return projetos.filter((p) => p.eixo === eixo);
+  return projetos.filter((p) => p.eixos.includes(eixo));
 }
 
 export const projetoAncora = projetos.find((p) => p.ancora);

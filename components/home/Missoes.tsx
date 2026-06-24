@@ -9,7 +9,7 @@ import {
   useScroll,
   useTransform,
 } from "framer-motion";
-import { listaEixos, type Eixo } from "@/content/eixos";
+import { listaEixos, missoesDescricaoSeccao, type Eixo } from "@/content/eixos";
 import { projetosPorEixo } from "@/content/projetos";
 
 export function Missoes() {
@@ -21,21 +21,24 @@ export function Missoes() {
           Duas missões
         </h2>
         <p className="mt-4 max-w-prosa text-pretty leading-relaxed text-cinza">
-          Cada missão ocupa metade da secção, com uma fotografia de fundo cuja
-          transparência reage ao scroll.
+          {missoesDescricaoSeccao}
         </p>
       </div>
 
-      <div className="mt-12 grid md:grid-cols-2">
-        {listaEixos.map((e, i) => (
-          <MissaoColuna key={e.id} eixo={e} primeira={i === 0} />
+      <div className="relative mt-12 grid md:grid-cols-2">
+        <span
+          aria-hidden
+          className="absolute left-1/2 top-0 z-10 hidden h-full w-[3px] -translate-x-1/2 bg-rosa md:block"
+        />
+        {listaEixos.map((e) => (
+          <MissaoColuna key={e.id} eixo={e} />
         ))}
       </div>
     </section>
   );
 }
 
-function MissaoColuna({ eixo, primeira }: { eixo: Eixo; primeira: boolean }) {
+function MissaoColuna({ eixo }: { eixo: Eixo }) {
   const ref = useRef<HTMLDivElement>(null);
   const reduzir = useReducedMotion();
   const { scrollYProgress } = useScroll({
@@ -54,9 +57,7 @@ function MissaoColuna({ eixo, primeira }: { eixo: Eixo; primeira: boolean }) {
   return (
     <div
       ref={ref}
-      className={`relative flex min-h-[82vh] items-center justify-center overflow-hidden p-8 lg:p-16 ${
-        primeira ? "" : "md:border-l border-cobalto/10"
-      }`}
+      className="relative flex min-h-[82vh] items-center justify-center overflow-hidden p-8 lg:p-16"
     >
       {/* Fotografia de fundo, transparência guiada pelo scroll */}
       <motion.div

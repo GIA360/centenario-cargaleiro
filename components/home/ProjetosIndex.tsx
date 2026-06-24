@@ -59,7 +59,7 @@ export function ProjetosIndex() {
 
         <ul className="mt-12 border-t border-cobalto/15">
           {lista.map((projeto, i) => {
-            const eixo = eixos[projeto.eixo];
+            const eixo = eixos[projeto.eixos[0]];
             const dim = ativo !== null && ativo !== i;
             const on = ativo === i;
             return (
@@ -87,14 +87,16 @@ export function ProjetosIndex() {
                       {projeto.titulo}
                     </span>
                     <span className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 font-sans text-xs uppercase tracking-eyebrow text-cinza">
-                      <span className="inline-flex items-center gap-1.5">
-                        <span
-                          aria-hidden
-                          className="h-2 w-2"
-                          style={{ backgroundColor: eixo.cor }}
-                        />
-                        {eixo.etiqueta}
-                      </span>
+                      {projeto.eixos.map((id) => (
+                        <span key={id} className="inline-flex items-center gap-1.5">
+                          <span
+                            aria-hidden
+                            className="h-2 w-2"
+                            style={{ backgroundColor: eixos[id].cor }}
+                          />
+                          {eixos[id].etiqueta}
+                        </span>
+                      ))}
                       <span aria-hidden>·</span>
                       <span>{projeto.data}</span>
                     </span>

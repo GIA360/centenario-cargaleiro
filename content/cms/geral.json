@@ -2,20 +2,26 @@
   "logo": "/images/biblioteca/geral/logo.png",
   "obraDestaque": "/images/biblioteca/geral/obraDestaque.jpg",
   "heroSobretitulo": "Comemorações do Centenário · 1927 — 2027",
-  "manifestoFrase": "Nove décadas a criar, um legado para programar: \nentre memória e criação, construir o futuro.",
-  "heroFrase": "Um programa, duas missões: entre memória e criação, construir o futuro.",
+  "manifestoFrase": "Nove décadas a criar. Um legado para programar.\nEntre memória e criação, construir o futuro.",
+  "heroFrase": "Nove décadas a criar. Um legado para programar.\nEntre memória e criação, construir o futuro.",
   "ctaPrimarioLabel": "Conhecer o programa",
   "ctaPrimarioHref": "/#programa",
   "ctaSecundarioLabel": "Cronograma",
   "ctaSecundarioHref": "/cronograma",
   "contactosInstituicao": "Fundação Manuel Cargaleiro",
   "contactosEmail": "geral@fundacaomanuelcargaleiro.pt",
-  "contactosMorada": "Castelo Branco · Seixal · Lisboa",
-  "fmcReferencia": "O Programa de Comemorações do Centenário é uma iniciativa da Fundação Manuel Cargaleiro.",
+  "contactosMorada": "Rua dos Cavaleiros, 23 | 6000-189 Castelo Branco",
+  "fmcReferencia": "O Programa de Comemorações do Centenário de Manuel Cargaleiro é uma iniciativa da Fundação Manuel Cargaleiro. ",
   "fmcUrl": "https://www.fundacaomanuelcargaleiro.pt",
   "fmcUrlLabel": "www.fundacaomanuelcargaleiro.pt",
   "newsletterTitulo": "Acompanhe as comemorações",
   "newsletterTexto": "Receba as datas, inaugurações e novidades do programa do Centenário.",
-  "parceiros": [],
-  "patrocinios": []
+  "parceiros": [
+    "/images/biblioteca/parceiros/parceiros/0.png",
+    "/images/biblioteca/parceiros/parceiros/1.png",
+    "/images/biblioteca/parceiros/parceiros/2.png"
+  ],
+  "patrocinios": [
+    "/images/biblioteca/patrocinios/patrocinios/0.jpg"
+  ]
 }

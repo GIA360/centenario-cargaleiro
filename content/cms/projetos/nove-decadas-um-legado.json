@@ -1,7 +1,7 @@
 {
   "titulo": "Nove décadas, um legado",
   "subtitulo": "Programa de Criação e Grande Exposição",
-  "eixo": "criacao",
+  "eixos": ["criacao", "expositiva"],
   "ancora": true,
   "local": "Centro de Exposições do Pavilhão de Portugal da Universidade de Lisboa",
   "data": "Março a julho de 2027 · Inauguração a 16 de março de 2027",
@@ -9,11 +9,10 @@
   "ordem": 2,
   "resumo": "Quatro obras musicais originais e uma grande exposição cronológica, década a década.",
   "introducao": "Um programa de criação artística original: quatro obras musicais inspiradas no percurso artístico e biográfico de Manuel Cargaleiro, articuladas com uma grande exposição cronológica organizada década a década — nove décadas, do final dos anos 40 a 2024.",
+  "galeria": [],
   "descricao": [
     "No Centro de Exposições do Pavilhão de Portugal, a música e a obra visual cruzam-se num único percurso. A criação musical não ilustra a pintura: traduz em som os seus princípios formais — ritmo, repetição, fragmentação e intensidade cromática."
   ],
-  "imagemDestaque": null,
-  "galeria": [],
   "factos": [],
   "objetivos": [],
   "parceiros": [],
@@ -23,70 +22,35 @@
   "indicadores": [
     {
       "valor": 4,
-      "prefixo": "",
-      "sufixo": "",
-      "label": "obras originais"
+      "label": "obras musicais originais"
     },
     {
       "valor": 9,
-      "prefixo": "",
-      "sufixo": "",
       "label": "andamentos"
     },
     {
       "valor": 4,
-      "prefixo": "",
-      "sufixo": "",
       "label": "compositores"
     },
     {
-      "valor": 2,
-      "prefixo": "",
-      "sufixo": "",
-      "label": "momentos performativos"
+      "valor": 100,
+      "label": "obras em exposição"
     },
     {
       "valor": 9,
-      "prefixo": "",
-      "sufixo": "",
       "label": "núcleos expositivos"
-    },
-    {
-      "valor": 1,
-      "prefixo": "",
-      "sufixo": "",
-      "label": "publicação integrada"
-    },
-    {
-      "valor": 10,
-      "prefixo": "~",
-      "sufixo": " 000",
-      "label": "visitantes estimados"
-    },
-    {
-      "valor": 500,
-      "prefixo": "",
-      "sufixo": "",
-      "label": "exemplares de publicação"
-    },
-    {
-      "valor": 500,
-      "prefixo": "",
-      "sufixo": "",
-      "label": "registos fonográficos"
     }
   ],
   "instituicoesAcervo": [
     "Assembleia da República",
     "Caixa Geral de Depósitos — Culturgest",
-    "Câmara Municipal de Castelo Branco",
     "Câmara Municipal de Vila Velha de Ródão",
     "Câmara Municipal do Seixal",
     "Fundação Millennium BCP",
-    "Fundação Manuel Cargaleiro / Museu Cargaleiro",
+    "Fundação Manuel Cargaleiro",
     "Museu de Arte Contemporânea Armando Martins",
     "Museu Nacional do Azulejo",
-    "Coleções privadas, com obras nunca apresentadas publicamente"
+    "Coleções privadas"
   ],
   "componentes": [
     {
@@ -95,17 +59,17 @@
       "intro": "Quatro obras musicais originais",
       "paragrafos": [
         "Quatro compositores assinam obras autónomas que, no conjunto, constituem uma obra unitária em nove andamentos, correspondentes a nove décadas.",
-        "A criação traduz em linguagem musical princípios formais da obra de Cargaleiro: ritmo, repetição, fragmentação e intensidade cromática.",
-        "Direção artística e interpretação a cargo do Lontano Trio — Clara de Sousa Gonçalves (saxofone), Francisco Martins (acordeão) e Pedro Vasquinho (contrabaixo). O ponto de partida conceptual é «Do Barro ao Som — Homenagem a Cargaleiro» (2024), do Lontano Trio, financiado pela Direção-Geral das Artes."
+        "A criação traduz em, linguagem musical, a interpretação dos compositores sobre obra de Cargaleiro.",
+        "Direção artística e interpretação a cargo do Lontano Trio — Clara de Sousa Gonçalves (saxofone), Francisco Martins (acordeão) e Pedro Vasquinho (contrabaixo)."
       ]
     },
     {
       "chave": "B",
       "titulo": "Apresentação pública",
-      "intro": "Exposição imersiva e performativa",
+      "intro": "Exposição imersiva e cronóligica",
       "paragrafos": [
-        "Nove núcleos expositivos correspondem às nove décadas, em articulação direta com os nove andamentos musicais. Cada núcleo tem museografia, seleção de obras e dispositivo sonoro próprios, para fruição simultânea da obra visual e da sua interpretação musical.",
-        "O momento inaugural é um percurso itinerante performativo do Lontano Trio pelos núcleos — um happening artístico, e não uma inauguração convencional. O encerramento traz uma nova ativação performativa."
+        "Nove núcleos expositivos correspondem às nove décadas, em articulação direta com os nove andamentos musicais. Cada núcleo apresentará uma museografia, seleção de obras e dispositivo sonoro próprios, para fruição simultânea da obra visual e da sua interpretação musical.",
+        "O momento inaugural contará com a primeira interpretação pública pelo Lontano Trio — um happening artístico, e não uma inauguração convencional. "
       ]
     },
     {
@@ -113,7 +77,7 @@
       "titulo": "Fixação e difusão",
       "intro": "Publicação e edição discográfica",
       "paragrafos": [
-        "Uma publicação artística integrada, e não apenas um catálogo: partituras, registo fonográfico integral em disco, narrativa curatorial e documentação do processo criativo.",
+        "Uma publicação do Centenário, e não apenas um catálogo: partituras, registo fonográfico integral em disco, narrativa curatorial e documentação do processo criativo.",
         "Um objeto artístico autónomo que assegura a preservação, a circulação e a continuidade do programa para além das datas da exposição."
       ]
     }
