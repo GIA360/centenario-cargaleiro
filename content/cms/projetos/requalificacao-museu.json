@@ -1,0 +1,44 @@
+{
+  "titulo": "Requalificação da Exposição Permanente",
+  "subtitulo": "Museu Cargaleiro",
+  "eixo": "expositiva",
+  "ancora": false,
+  "local": "Museu Cargaleiro, Castelo Branco (edifício contemporâneo)",
+  "data": "Março de 2028",
+  "dataOrdenacao": "2028-03-01",
+  "ordem": 4,
+  "resumo": "Nova exposição permanente, com mediação sonora e narrativa biográfica.",
+  "introducao": "Requalificação da exposição permanente do Museu Cargaleiro, que integra a narrativa e os equipamentos de mediação sonora desenvolvidos para a exposição do Centenário.",
+  "descricao": [
+    "A intervenção integra as obras musicais originais em diálogo com as obras que inspiraram o processo criativo, prolongando no museu a experiência da grande exposição do Pavilhão de Portugal.",
+    "Introduz ainda, de forma permanente, uma componente biográfica sobre a vida e a obra de Manuel Cargaleiro."
+  ],
+  "imagemDestaque": null,
+  "galeria": [],
+  "factos": [
+    {
+      "rotulo": "Local",
+      "valor": "Museu Cargaleiro, Castelo Branco"
+    },
+    {
+      "rotulo": "Conclusão",
+      "valor": "Março de 2028"
+    },
+    {
+      "rotulo": "Eixo",
+      "valor": "Programação Expositiva"
+    }
+  ],
+  "objetivos": [],
+  "parceiros": [
+    "Fundação Manuel Cargaleiro",
+    "Câmara Municipal de Castelo Branco"
+  ],
+  "juri": [],
+  "seccoes": [],
+  "cronogramaEdicao": [],
+  "indicadores": [],
+  "instituicoesAcervo": [],
+  "componentes": [],
+  "usaCompositores": false
+}

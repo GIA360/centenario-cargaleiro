@@ -1,0 +1,122 @@
+{
+  "titulo": "Prémios Manuel Cargaleiro",
+  "subtitulo": "1.ª edição",
+  "eixo": "criacao",
+  "ancora": false,
+  "local": "Museu Cargaleiro, Castelo Branco",
+  "data": "Inauguração a 9 de setembro de 2026",
+  "dataOrdenacao": "2026-09-09",
+  "ordem": 1,
+  "resumo": "Prémios que apoiam a criação contemporânea e as novas gerações de artistas.",
+  "introducao": "No ano em que se assinala o Centenário de Manuel Cargaleiro, a Fundação inicia uma nova etapa da sua missão, reforçando o compromisso com o apoio à criação contemporânea e com a valorização das novas gerações de artistas.",
+  "imagemDestaque": "/images/biblioteca/projetos/premios-manuel-cargaleiro/imagemDestaque.JPG",
+  "imagemFlutuante": "/images/biblioteca/projetos/premios-manuel-cargaleiro/imagemFlutuante.png",
+  "galeria": [
+    "/images/biblioteca/projetos/premios-manuel-cargaleiro/galeria/0.png"
+  ],
+  "descricao": [
+    "Inspirada pelo percurso de Manuel Cargaleiro — que construiu uma carreira internacional sem nunca perder a ligação à experimentação, à inovação e ao diálogo entre tradição e modernidade — a instituição assume como prioridade estratégica o desenvolvimento de programas que promovam novos talentos, a circulação de conhecimento e a aproximação entre artistas, instituições e públicos.",
+    "É neste contexto que surgem os Prémios Manuel Cargaleiro, uma iniciativa desenvolvida em parceria com a Faculdade de Belas-Artes da Universidade de Lisboa e com o apoio da Câmara Municipal de Castelo Branco, destinada a incentivar a criação artística e a investigação no domínio das artes visuais.",
+    "Através das categorias Prémio Revelação, Prémio Cargaleiro e Prémio Investigação, os prémios distinguem projetos de excelência, incentivando a qualidade, a inovação e a afirmação de novos percursos criativos e académicos.",
+    "A seleção dos finalistas e vencedores é assegurada por um júri independente, constituído por personalidades de reconhecido mérito no panorama artístico nacional. Na sua primeira edição, o júri integra Alexandre Farto (Vhils), Sandra Vieira Jürgens e Graça Morais.",
+    "Mais do que uma distinção, esta iniciativa afirma-se como uma plataforma de valorização, divulgação e projeção da criação contemporânea, complementada por uma exposição coletiva e pela publicação de um catálogo dedicado aos projetos selecionados."
+  ],
+  "factos": [
+    {
+      "rotulo": "Candidaturas",
+      "valor": "267"
+    },
+    {
+      "rotulo": "Categorias",
+      "valor": "Revelação · Cargaleiro · Investigação"
+    },
+    {
+      "rotulo": "Cerimónia",
+      "valor": "23 out 2026 · FBAUL, Lisboa"
+    }
+  ],
+  "objetivos": [
+    "Promover a criação artística contemporânea nas artes visuais.",
+    "Incentivar a investigação no domínio das artes visuais.",
+    "Valorizar e projetar as novas gerações de artistas."
+  ],
+  "parceiros": [
+    "Fundação Manuel Cargaleiro",
+    "Faculdade de Belas-Artes da Universidade de Lisboa",
+    "Câmara Municipal de Castelo Branco",
+    "Câmara Municipal do Seixal"
+  ],
+  "juri": [
+    {
+      "nome": "Alexandre Farto (Vhils)",
+      "papel": "Artista visual"
+    },
+    {
+      "nome": "Sandra Vieira Jürgens",
+      "papel": "Curadora e investigadora"
+    },
+    {
+      "nome": "Graça Morais",
+      "papel": "Artista visual"
+    }
+  ],
+  "seccoes": [
+    {
+      "titulo": "A exposição",
+      "paragrafos": [
+        "As obras selecionadas como finalistas da 1.ª edição dos Prémios Manuel Cargaleiro integrarão uma exposição coletiva no Museu Cargaleiro, concebida como um espaço de encontro entre diferentes linguagens, abordagens e visões da criação contemporânea.",
+        "A exposição apresenta ao público um conjunto representativo da produção artística emergente, evidenciando a diversidade de práticas e investigações desenvolvidas no contexto académico e reforçando a ligação entre formação artística, criação e sociedade.",
+        "Associado à exposição será publicado um catálogo que reúne as obras selecionadas, textos de enquadramento e contributos institucionais — um importante registo documental desta primeira edição."
+      ]
+    },
+    {
+      "titulo": "A cerimónia de entrega",
+      "paragrafos": [
+        "A cerimónia de entrega terá lugar a 23 de outubro de 2026, na Faculdade de Belas-Artes da Universidade de Lisboa, integrando as celebrações do Dia das Belas-Artes.",
+        "Concebida como um dos momentos centrais das Comemorações do Centenário, reunirá representantes institucionais, artistas, estudantes, docentes e convidados para assinalar publicamente a excelência dos trabalhos distinguidos.",
+        "O programa inclui a apresentação oficial do catálogo, momentos de intervenção institucional, a divulgação dos resultados e a entrega dos prémios aos vencedores."
+      ]
+    },
+    {
+      "titulo": "Itinerância — Oficina de Artes Manuel Cargaleiro",
+      "paragrafos": [
+        "Após o Museu Cargaleiro, a exposição itinera para a Oficina de Artes Manuel Cargaleiro, no Seixal — espaço que reinterpreta o atelier do artista — alargando o alcance da iniciativa e a sua relação com novos públicos.",
+        "A apresentação no Seixal resulta de uma parceria entre a Câmara Municipal do Seixal e a Fundação Manuel Cargaleiro, com inauguração a 27 de março de 2027."
+      ]
+    }
+  ],
+  "cronogramaEdicao": [
+    {
+      "data": "24/10/2025",
+      "descricao": "Open Call"
+    },
+    {
+      "data": "15/02/2026",
+      "descricao": "Encerramento das candidaturas"
+    },
+    {
+      "data": "Até 30/03/2026",
+      "descricao": "Divulgação dos finalistas"
+    },
+    {
+      "data": "Até 03/04/2026",
+      "descricao": "Entrega das obras na FBAUL"
+    },
+    {
+      "data": "09/09/2026",
+      "descricao": "Inauguração no Museu Cargaleiro"
+    },
+    {
+      "data": "23/10/2026",
+      "descricao": "Cerimónia e entrega dos prémios — FBAUL"
+    },
+    {
+      "data": "27/03/2027",
+      "descricao": "Inauguração da itinerância na OAMC — Seixal"
+    }
+  ],
+  "indicadores": [],
+  "instituicoesAcervo": [],
+  "componentes": [],
+  "usaCompositores": false
+}
