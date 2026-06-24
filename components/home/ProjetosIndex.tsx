@@ -33,6 +33,7 @@ export function ProjetosIndex() {
     ativo !== null
       ? lista[ativo].imagemFlutuante ?? lista[ativo].imagemDestaque
       : null;
+  const corPreview = ativo !== null ? eixos[lista[ativo].eixos[0]].cor : undefined;
 
   return (
     <section
@@ -135,7 +136,10 @@ export function ProjetosIndex() {
             }}
             transition={{ duration: 0.25 }}
           >
-            <div className="w-72 overflow-hidden shadow-[0_24px_60px_-20px_rgba(13,16,40,0.5)]">
+            <div
+              className="w-72 overflow-hidden border-4 shadow-[0_24px_60px_-20px_rgba(13,16,40,0.5)]"
+              style={{ borderColor: corPreview }}
+            >
               {previewSrc ? (
                 /* eslint-disable-next-line @next/next/no-img-element */
                 <img
