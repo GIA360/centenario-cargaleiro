@@ -2,14 +2,16 @@
 
 import { motion, useMotionTemplate, type MotionValue } from "framer-motion";
 
-const AZULEJO = "/images/hero/azulejo.jpg";
-// dimensão do padrão de azulejos (largura do painel; cada quadrado ≈ 1/5)
-const TILE = "clamp(360px, 32vw, 520px) auto";
+// original: "/images/hero/azulejo.jpg" — trocar de volta para reverter o teste
+const AZULEJO = "/images/hero/azulejo-novo.webp";
 
+// teste: imagem única (sem padrão repetido), a cobrir toda a secção
+// original: backgroundSize: "clamp(360px, 32vw, 520px) auto", backgroundRepeat: "repeat"
 const fundo = {
   backgroundImage: `url("${AZULEJO}")`,
-  backgroundSize: TILE,
-  backgroundRepeat: "repeat",
+  backgroundSize: "cover",
+  backgroundRepeat: "no-repeat",
+  backgroundPosition: "center",
 } as const;
 
 /**

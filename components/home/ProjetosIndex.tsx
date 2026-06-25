@@ -59,7 +59,7 @@ export function ProjetosIndex() {
           </h2>
           <p className="mt-4 max-w-prosa text-pretty leading-relaxed text-cinza">
             Cinco iniciativas, duas missões. Passe o cursor para
-            pré-visualizar; clique para abrir.
+            pré-visualizar e clique para obter mais informações.
           </p>
         </motion.div>
 

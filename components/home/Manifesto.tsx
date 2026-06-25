@@ -43,7 +43,7 @@ export function Manifesto() {
     <section
       ref={ref}
       onPointerMove={reduzir ? undefined : aoMover}
-      className="relative flex min-h-[40vh] items-center overflow-hidden bg-cobaltoFundo py-14 sm:py-16"
+      className="relative flex min-h-[55vh] items-center overflow-hidden bg-cobaltoFundo py-16 sm:py-[74px]"
     >
       {obraSrc && (
         <Image

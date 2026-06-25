@@ -59,6 +59,7 @@ export const newsletter = {
 
 // Logótipos do rodapé (upload no CMS — secção «Geral»).
 export const rodapeLogos: { titulo: string; srcs: string[] }[] = [
+  { titulo: "Organização", srcs: (geral.organizacao ?? []) as string[] },
   { titulo: "Parceiros", srcs: (geral.parceiros ?? []) as string[] },
   { titulo: "Patrocínios", srcs: (geral.patrocinios ?? []) as string[] },
 ];

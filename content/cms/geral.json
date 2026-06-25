@@ -16,12 +16,15 @@
   "fmcUrlLabel": "www.fundacaomanuelcargaleiro.pt",
   "newsletterTitulo": "Acompanhe as comemorações",
   "newsletterTexto": "Receba as datas, inaugurações e novidades do programa do Centenário.",
+  "organizacao": [
+    "/images/biblioteca/organizacao/organizacao/0.png",
+    "/images/biblioteca/organizacao/organizacao/1.png"
+  ],
   "parceiros": [
     "/images/biblioteca/parceiros/parceiros/0.png",
     "/images/biblioteca/parceiros/parceiros/1.png",
     "/images/biblioteca/parceiros/parceiros/2.png",
-    "/images/biblioteca/parceiros/parceiros/3.png",
-    "/images/biblioteca/parceiros/parceiros/4.jpg"
+    "/images/biblioteca/parceiros/parceiros/3.jpg"
   ],
   "patrocinios": [
     "/images/biblioteca/patrocinios/patrocinios/0.jpg"

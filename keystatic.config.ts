@@ -66,6 +66,10 @@ export default config({
         fmcUrlLabel: fields.text({ label: "Fundação — texto do link" }),
         newsletterTitulo: fields.text({ label: "Newsletter — título" }),
         newsletterTexto: fields.text({ label: "Newsletter — texto", multiline: true }),
+        organizacao: fields.array(
+          img("organizacao", "Logótipo", "PNG com fundo transparente, horizontal."),
+          { label: "Logótipos — Organização", itemLabel: () => "Logótipo" },
+        ),
         parceiros: fields.array(
           img("parceiros", "Logótipo", "PNG com fundo transparente, horizontal."),
           { label: "Logótipos — Parceiros", itemLabel: () => "Logótipo" },

@@ -3,17 +3,28 @@
 import { useState, type FormEvent } from "react";
 import { newsletter } from "@/content/site";
 
-/** Subscrição da newsletter. Sem backend nesta fase — valida e confirma
- *  no cliente; a integração de envio fica para ligar depois. */
+/** Subscrição da newsletter — grava cada email numa Google Sheet via
+ *  /api/newsletter (ver app/api/newsletter/route.ts). */
 export function Newsletter() {
   const [email, setEmail] = useState("");
-  const [enviado, setEnviado] = useState(false);
+  const [estado, setEstado] = useState<"idle" | "a-enviar" | "enviado" | "erro">("idle");
 
-  function submeter(e: FormEvent) {
+  async function submeter(e: FormEvent) {
     e.preventDefault();
     if (!email) return;
-    setEnviado(true);
-    setEmail("");
+    setEstado("a-enviar");
+    try {
+      const res = await fetch("/api/newsletter", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
+      if (!res.ok) throw new Error();
+      setEstado("enviado");
+      setEmail("");
+    } catch {
+      setEstado("erro");
+    }
   }
 
   return (
@@ -21,7 +32,7 @@ export function Newsletter() {
       <h3 className="font-display text-xl font-semibold">{newsletter.titulo}</h3>
       <p className="mt-2 max-w-prosa text-sm text-cinza">{newsletter.texto}</p>
 
-      {enviado ? (
+      {estado === "enviado" ? (
         <p className="mt-4 font-sans text-sm font-medium text-criacao">
           Obrigado. Subscrição registada.
         </p>
@@ -41,11 +52,18 @@ export function Newsletter() {
           />
           <button
             type="submit"
-            className="shrink-0 bg-cobalto px-5 py-2.5 font-sans text-sm font-semibold text-white transition-colors hover:bg-ceramica"
+            disabled={estado === "a-enviar"}
+            className="shrink-0 bg-cobalto px-5 py-2.5 font-sans text-sm font-semibold text-white transition-colors hover:bg-ceramica disabled:opacity-60"
           >
-            {newsletter.botao}
+            {estado === "a-enviar" ? "A enviar…" : newsletter.botao}
           </button>
         </form>
+      )}
+
+      {estado === "erro" && (
+        <p className="mt-2 font-sans text-sm text-rosaEscuro">
+          Não foi possível subscrever. Tenta novamente.
+        </p>
       )}
     </div>
   );
