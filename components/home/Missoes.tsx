@@ -61,7 +61,7 @@ function MissaoColuna({ eixo }: { eixo: Eixo }) {
   return (
     <div
       ref={ref}
-      className="relative flex min-h-[82vh] items-center justify-center overflow-hidden p-8 lg:p-16"
+      className="relative flex min-h-[60vh] items-center justify-center overflow-hidden p-6 sm:p-8 md:min-h-[82vh] lg:p-16"
     >
       {/* Fotografia de fundo, transparência guiada pelo scroll */}
       <motion.div

@@ -97,7 +97,7 @@ export function Header() {
         <button
           type="button"
           onClick={() => setAberto((v) => !v)}
-          className="md:hidden"
+          className="-m-3.5 p-3.5 md:hidden"
           aria-expanded={aberto}
           aria-controls="menu-movel"
           aria-label={aberto ? "Fechar menu" : "Abrir menu"}

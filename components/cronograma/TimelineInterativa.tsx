@@ -186,7 +186,7 @@ function EventoCard({
         <ManagedImage
           src={imagemSrc}
           ratio="16 / 9"
-          sizes="280px"
+          sizes="(max-width: 639px) 250px, 280px"
           imgClassName="transition-transform duration-500 group-hover:scale-105"
         />
       </div>
@@ -194,7 +194,7 @@ function EventoCard({
   );
 
   const classes = cn(
-    "group flex h-full w-[280px] shrink-0 snap-start flex-col border border-cobalto/10 bg-white p-6 transition-all duration-300 hover:-translate-y-1.5 hover:border-cobalto/30 hover:shadow-[0_18px_40px_-24px_rgba(35,42,94,0.45)]",
+    "group flex h-full w-[250px] shrink-0 snap-start flex-col border border-cobalto/10 bg-white p-6 transition-all duration-300 hover:-translate-y-1.5 hover:border-cobalto/30 hover:shadow-[0_18px_40px_-24px_rgba(35,42,94,0.45)] sm:w-[280px]",
     proximo && "border-rosa/40",
   );
 

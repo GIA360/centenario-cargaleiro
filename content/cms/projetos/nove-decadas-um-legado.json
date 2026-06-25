@@ -1,6 +1,6 @@
 {
   "titulo": "Nove décadas, um legado",
-  "subtitulo": "Programa de Criação e Grande Exposição",
+  "subtitulo": "Entre memória e criação, construir o futuro",
   "eixos": [
     "criacao",
     "expositiva"
@@ -11,12 +11,12 @@
   "dataOrdenacao": "2027-03-16",
   "ordem": 2,
   "resumo": "Quatro obras musicais originais e uma grande exposição cronológica, década a década.",
-  "introducao": "Um programa de criação artística original: quatro obras musicais inspiradas no percurso artístico e biográfico de Manuel Cargaleiro, articuladas com uma grande exposição cronológica organizada década a década — nove décadas, do final dos anos 40 a 2024.",
+  "introducao": "Uma grande exposição e um programa de criação musical autoral: quatro obras musicais inspiradas no percurso artístico e biográfico de Manuel Cargaleiro, articuladas com uma exposição cronológica organizada década a década — nove décadas, do final dos anos 40 a 2024.",
   "imagemDestaque": "/images/biblioteca/projetos/nove-decadas-um-legado/imagemDestaque.jpg",
   "imagemFlutuante": "/images/biblioteca/projetos/nove-decadas-um-legado/imagemFlutuante.png",
   "galeria": [],
   "descricao": [
-    "No Centro de Exposições do Pavilhão de Portugal, a música e a obra visual cruzam-se num único percurso. A criação musical não ilustra a pintura: traduz em som os seus princípios formais — ritmo, repetição, fragmentação e intensidade cromática."
+    "No Centro de Exposições do Pavilhão de Portugal, a obra de Manuel Cargaleiro e a música cruzam-se num único percurso."
   ],
   "factos": [],
   "objetivos": [],
@@ -60,21 +60,18 @@
   "componentes": [
     {
       "chave": "A",
-      "titulo": "Produção artística contemporânea",
-      "intro": "Quatro obras musicais originais",
+      "titulo": "Exposição no Pavilhão de Portugal",
+      "intro": "O legado de Manuel Cargaleiro em destaque",
       "paragrafos": [
-        "Quatro compositores assinam obras autónomas que, no conjunto, constituem uma obra unitária em nove andamentos, correspondentes a nove décadas.",
-        "A criação traduz em, linguagem musical, a interpretação dos compositores sobre obra de Cargaleiro.",
-        "Direção artística e interpretação a cargo do Lontano Trio — Clara de Sousa Gonçalves (saxofone), Francisco Martins (acordeão) e Pedro Vasquinho (contrabaixo)."
+        "Nove núcleos expositivos, correspondentes às nove décadas de criação artística de Manuel Cargaleiro, estruturam o percurso da exposição. Esta narrativa estabelece uma relação direta com os nove andamentos das quatro obras musicais originais especialmente concebidas para o projeto, criando um diálogo entre artes visuais e criação sonora. A mostra reunirá ainda obras provenientes de dez instituições e coleções privadas, refletindo a amplitude, o reconhecimento e a dispersão do legado artístico de Manuel Cargaleiro."
       ]
     },
     {
       "chave": "B",
-      "titulo": "Apresentação pública",
-      "intro": "Exposição imersiva e cronóligica",
+      "titulo": "Produção artística contemporânea",
+      "intro": "Quatro obras musicais originais",
       "paragrafos": [
-        "Nove núcleos expositivos correspondem às nove décadas, em articulação direta com os nove andamentos musicais. Cada núcleo apresentará uma museografia, seleção de obras e dispositivo sonoro próprios, para fruição simultânea da obra visual e da sua interpretação musical.",
-        "O momento inaugural contará com a primeira interpretação pública pelo Lontano Trio — um happening artístico, e não uma inauguração convencional. "
+        "Quatro obras musicais originais encomendadas pela Fundação Manuel Cargaleiro, inspiradas no percurso artístico e biográfico do Mestre. As obras, assinadas pelos compositores Pedro Lima, Dimitris Andrikopoulos, Sofia Sousa Rocha e Solange Azevedo, são autónomas mas permitirão, no seu conjunto, uma leitura unitária com nove andamentos, correspondentes às nove décadas explanadas na exposição. \n\nA direção artística e a interpretação ficam a cargo do Lontano Trio — Clara de Sousa Gonçalves, Francisco Martins e Pedro Vasquinho."
       ]
     },
     {
@@ -82,8 +79,7 @@
       "titulo": "Fixação e difusão",
       "intro": "Publicação e edição discográfica",
       "paragrafos": [
-        "Uma publicação do Centenário, e não apenas um catálogo: partituras, registo fonográfico integral em disco, narrativa curatorial e documentação do processo criativo.",
-        "Um objeto artístico autónomo que assegura a preservação, a circulação e a continuidade do programa para além das datas da exposição."
+        "Uma publicação do Centenário, e não apenas um catálogo: partituras, registo fonográfico integral em disco, narrativa curatorial e documentação do processo criativo."
       ]
     }
   ],

@@ -1,25 +1,31 @@
 {
   "titulo": "O Princípio do Gesto",
   "subtitulo": "Manuel Cargaleiro",
-  "eixos": ["expositiva"],
+  "eixos": [
+    "expositiva"
+  ],
   "ancora": false,
   "local": "CIART — Centro de Interpretação de Arte Rupestre do Vale do Tejo, Vila Velha de Ródão",
   "data": "27 de junho de 2026 – 31 de dezembro de 2027",
   "dataOrdenacao": "2026-06-27",
   "ordem": 0,
-  "resumo": "Exposição inaugural do Centenário, no território de nascimento do artista.",
-  "introducao": "A exposição «O Princípio do Gesto – Manuel Cargaleiro» inaugura as Comemorações do Centenário, assinalando os 100 anos do nascimento do artista.",
+  "resumo": "Exposição inaugural do Centenário, no território onde nasceu Manuel Cargaleiro.",
+  "introducao": "A exposição \"O Princípio do Gesto – Manuel Cargaleiro\" inaugura as Comemorações do Centenário, assinalando os 100 anos do nascimento do artista.",
   "imagemDestaque": "/images/biblioteca/projetos/principio-do-gesto/imagemDestaque.png",
   "imagemFlutuante": "/images/biblioteca/projetos/principio-do-gesto/imagemFlutuante.jpg",
   "galeria": [
     "/images/biblioteca/projetos/principio-do-gesto/galeria/0.jpg",
-    "/images/biblioteca/projetos/principio-do-gesto/galeria/1.jpg"
+    "/images/biblioteca/projetos/principio-do-gesto/galeria/1.jpg",
+    "/images/biblioteca/projetos/principio-do-gesto/galeria/2.jpg",
+    "/images/biblioteca/projetos/principio-do-gesto/galeria/3.jpg",
+    "/images/biblioteca/projetos/principio-do-gesto/galeria/4.jpg",
+    "/images/biblioteca/projetos/principio-do-gesto/galeria/5.jpg",
+    "/images/biblioteca/projetos/principio-do-gesto/galeria/6.jpg",
+    "/images/biblioteca/projetos/principio-do-gesto/galeria/7.jpg",
+    "/images/biblioteca/projetos/principio-do-gesto/galeria/8.jpg"
   ],
   "descricao": [
-    "Apresentada no CIART, em Vila Velha de Ródão, esta exposição assume um regresso simbólico ao território natal de Manuel Cargaleiro e estabelece um diálogo entre a sua obra e um espaço marcado pela presença ancestral do gesto enquanto forma de inscrição humana no território.",
-    "A proposta expositiva não se estrutura a partir de uma leitura biográfica, mas de uma hipótese conceptual: o gesto como fundamento da criação artística, entendido como primeira expressão de pensamento, construção e representação.",
-    "O percurso organiza-se em dois momentos. O primeiro reúne desenhos a tinta-da-china e placas de xisto, onde a depuração formal evidencia a gestualidade na sua expressão mais essencial, reduzida ao traço, à síntese e à economia do signo. O segundo desloca essa gestualidade para a cerâmica, através de azulejos e placas esgrafitadas, onde o gesto se afirma como ação direta sobre a matéria, revelando a imagem por remoção e subtração.",
-    "A inauguração, a 27 de junho de 2026, marcou o início oficial do Programa das Comemorações do Centenário, que se prolonga até 2028, com iniciativas distribuídas por diferentes territórios e contextos institucionais."
+    "Apresentada no CIART, em Vila Velha de Ródão, esta exposição assume um regresso simbólico ao território natal de Manuel Cargaleiro e estabelece um diálogo entre a sua obra e um espaço marcado pela presença ancestral do gesto enquanto forma de inscrição humana no território.\n\nA proposta expositiva não se estrutura a partir de uma leitura biográfica, mas de uma hipótese conceptual: o gesto como fundamento da criação artística, entendido como primeira expressão de pensamento, construção e representação.\n\nO percurso organiza-se em dois momentos. O primeiro reúne desenhos a tinta-da-china e placas de xisto, onde a depuração formal evidencia a gestualidade na sua expressão mais essencial, reduzida ao traço e à síntese das formas. O segundo desloca essa gestualidade para o campo da materialidade, através de azulejos e placas esgrafitadas, onde o gesto se afirma como ação direta sobre a matéria, revelando o desenho por subtração."
   ],
   "factos": [
     {

@@ -72,7 +72,7 @@ export function Manifesto() {
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
           className="mb-7 block h-1 w-16 origin-left bg-rosa"
         />
-        <p className="max-w-5xl font-display text-[clamp(1.4rem,3vw,2.5rem)] font-bold leading-[1.3] tracking-[-0.015em] [text-wrap:balance]">
+        <p className="max-w-5xl font-display text-[clamp(1.7rem,3.6vw,3rem)] font-bold leading-[1.3] tracking-[-0.015em] [text-wrap:balance]">
           {PALAVRAS.map((palavra, i) => (
             <Palavra
               key={i}

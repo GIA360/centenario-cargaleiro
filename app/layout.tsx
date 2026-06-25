@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
 import { Bricolage_Grotesque, Hanken_Grotesk } from "next/font/google";
 import { site } from "@/content/site";
@@ -45,6 +45,11 @@ export const metadata: Metadata = {
     description: site.descricao,
   },
   alternates: { canonical: "/" },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {

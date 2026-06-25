@@ -94,7 +94,7 @@ function Conteudo({
 
         <div ref={scrollRef} className="flex-1 overflow-y-auto overscroll-contain">
         {/* destaque: fotografia horizontal grande com parallax */}
-        <div className="relative h-[58vh] min-h-[360px] overflow-hidden bg-cobalto">
+        <div className="relative h-[42vh] min-h-[320px] overflow-hidden bg-cobalto sm:h-[58vh] sm:min-h-[360px]">
           <motion.div
             style={reduzir ? undefined : { y: heroY, scale: heroEscala }}
             className="absolute inset-0"
@@ -142,7 +142,7 @@ function Conteudo({
         </div>
 
         {/* corpo */}
-        <div className="shell grid gap-12 py-16 lg:grid-cols-[1.6fr_1fr] lg:gap-20">
+        <div className="shell grid gap-8 py-10 sm:gap-12 sm:py-16 lg:grid-cols-[1.6fr_1fr] lg:gap-20">
           <div>
             <Aparece root={scrollRef}>
               <p className="max-w-prosa text-pretty text-xl leading-relaxed text-cobalto">
@@ -295,7 +295,7 @@ function Conteudo({
         {/* indicadores */}
         {projeto.indicadores && (
           <div className="border-y border-cobalto/10 bg-rosaClaro py-14">
-            <div className="shell grid grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-5">
+            <div className="shell grid grid-cols-2 gap-6 sm:grid-cols-3 sm:gap-8 lg:grid-cols-5">
               {projeto.indicadores.map((ind) => (
                 <div key={ind.label}>
                   <p className="font-display text-4xl font-bold text-cobalto">

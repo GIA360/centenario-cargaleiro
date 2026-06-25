@@ -1,5 +1,5 @@
 {
-  "titulo": "Requalificação da Exposição Permanente",
+  "titulo": "Renovação da Exposição Permanente",
   "subtitulo": "Museu Cargaleiro",
   "eixos": [
     "expositiva"
@@ -9,14 +9,13 @@
   "data": "Março de 2028",
   "dataOrdenacao": "2028-03-01",
   "ordem": 4,
-  "resumo": "Nova exposição permanente, com mediação sonora e narrativa biográfica.",
-  "introducao": "Requalificação da exposição permanente do Museu Cargaleiro, que integra a narrativa e os equipamentos de mediação sonora desenvolvidos para a exposição do Centenário.",
+  "resumo": "Nova exposição permanente, integrando mediação sonora e narrativa biográfica.",
+  "introducao": "Renovação da exposição permanente do Museu Cargaleiro, que passará a integrar a narrativa e os equipamentos de mediação sonora desenvolvidos para a exposição do Centenário.",
   "imagemDestaque": "/images/biblioteca/projetos/requalificacao-museu/imagemDestaque.JPG",
   "imagemFlutuante": "/images/biblioteca/projetos/requalificacao-museu/imagemFlutuante.JPG",
   "galeria": [],
   "descricao": [
-    "A intervenção integra as obras musicais originais em diálogo com as obras que inspiraram o processo criativo, prolongando no museu a experiência da grande exposição do Pavilhão de Portugal.",
-    "Introduz ainda, de forma permanente, uma componente biográfica sobre a vida e a obra de Manuel Cargaleiro."
+    "Em 2028, o Museu Cargaleiro, em Castelo Branco, reformula a sua exposição permanente. Mais do que uma atualização, trata-se de repensar o modo como a obra de Manuel Cargaleiro se dá a ver e a ouvir — e de fixar, no coração da cidade que o acolhe, o legado construído ao longo do Centenário.\n\nA reformulação encerra e, ao mesmo tempo, prolonga o ciclo comemorativo. A narrativa e a componente sonora desenvolvidas para o projeto \"Nove décadas, um legado: entre memória e criação, construir o futuro\" não se esgotam na sua apresentação em Lisboa: regressam a Castelo Branco e passam a integrar, de forma permanente, o percurso do Museu. \n\nCom esta intervenção, o Museu Cargaleiro reafirma-se como casa da Coleção da Fundação Manuel Cargaleiro e centro de referência do legado do Mestre, e consolida Castelo Branco como o território a partir do qual essa obra continua a projetar-se."
   ],
   "factos": [
     {
@@ -39,7 +38,12 @@
   ],
   "juri": [],
   "seccoes": [],
-  "cronogramaEdicao": [],
+  "cronogramaEdicao": [
+    {
+      "data": "16 de Março de 2028",
+      "descricao": "Inauguração"
+    }
+  ],
   "indicadores": [],
   "instituicoesAcervo": [],
   "componentes": [],

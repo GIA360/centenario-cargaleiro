@@ -6,7 +6,7 @@ export function Footer() {
   const ano = new Date().getFullYear();
 
   return (
-    <footer id="contactos" className="mt-24 border-t border-cobalto/10 bg-white">
+    <footer id="contactos" className="border-t border-cobalto/10 bg-white">
       <div className="shell grid gap-12 py-16 lg:grid-cols-[1.3fr_1fr_1.2fr]">
         <div>
           <p className="font-display text-lg font-bold text-cobalto">

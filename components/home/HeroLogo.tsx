@@ -72,7 +72,7 @@ export function HeroLogo() {
           </Link>
           <Link
             href={hero.ctaSecundario.href}
-            className="border border-cobalto/30 px-7 py-3.5 font-sans text-sm font-semibold text-cobalto transition-colors hover:border-cobalto hover:bg-cobalto hover:text-white"
+            className="border border-cobalto/30 bg-white px-7 py-3.5 font-sans text-sm font-semibold text-cobalto transition-colors hover:border-cobalto hover:bg-cobalto hover:text-white"
           >
             {hero.ctaSecundario.label}
           </Link>

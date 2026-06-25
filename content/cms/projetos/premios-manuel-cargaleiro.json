@@ -1,7 +1,9 @@
 {
   "titulo": "Prémios Manuel Cargaleiro",
   "subtitulo": "1.ª edição",
-  "eixos": ["criacao"],
+  "eixos": [
+    "criacao"
+  ],
   "ancora": false,
   "local": "Museu Cargaleiro, Castelo Branco",
   "data": "Inauguração a 9 de setembro de 2026",
@@ -74,14 +76,13 @@
       "titulo": "A cerimónia",
       "paragrafos": [
         "A cerimónia de entrega terá lugar a 23 de outubro de 2026, na Faculdade de Belas-Artes da Universidade de Lisboa, integrando as celebrações do Dia das Belas-Artes.",
-        "Concebida como um dos momentos centrais das Comemorações do Centenário, reunirá representantes institucionais, artistas, estudantes, docentes e convidados para assinalar publicamente a excelência dos trabalhos distinguidos.",
-        "O programa inclui a apresentação oficial do catálogo, momentos de intervenção institucional, a divulgação dos resultados e a entrega dos prémios aos vencedores."
+        "Concebida como um dos momentos centrais das Comemorações do Centenário, reunirá representantes institucionais, artistas, estudantes, docentes e convidados para assinalar publicamente a excelência dos trabalhos distinguidos."
       ]
     },
     {
       "titulo": "Itinerância — Oficina de Artes Manuel Cargaleiro",
       "paragrafos": [
-        "Após o Museu Cargaleiro, a exposição itinera para a Oficina de Artes Manuel Cargaleiro, no Seixal — espaço que reinterpreta o atelier do artista — alargando o alcance da iniciativa e a sua relação com novos públicos.",
+        "Após a apresentação no Museu Cargaleiro, a exposição será apresentada na Oficina de Artes Manuel Cargaleiro, no Seixal, alargando o alcance da iniciativa e a sua relação com novos públicos.",
         "A apresentação no Seixal resulta de uma parceria entre a Câmara Municipal do Seixal e a Fundação Manuel Cargaleiro, com inauguração a 27 de março de 2027."
       ]
     }
