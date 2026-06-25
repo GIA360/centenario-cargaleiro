@@ -26,7 +26,7 @@ export function HeroLogo() {
     <section
       ref={ref}
       onPointerMove={reduzir ? undefined : aoMover}
-      className="relative flex min-h-screen flex-col items-center justify-start overflow-hidden bg-white px-5 pb-[18vh] pt-[14vh] sm:pt-[12vh]"
+      className="relative flex flex-col items-center justify-start overflow-hidden bg-white px-5 pb-32 pt-[14vh] sm:min-h-screen sm:pb-[18vh] sm:pt-[12vh]"
     >
       <HeroAzulejos mx={sx} my={sy} reduzir={!!reduzir} />
 
