@@ -147,7 +147,8 @@ function EventoCard({
   const projeto = ev.projetoSlug ? obterProjeto(ev.projetoSlug) : undefined;
   const cor = ev.eixo ? eixos[ev.eixo].cor : "#6B6B6B";
   const corTexto = ev.eixo ? eixos[ev.eixo].corTexto : "#6B6B6B";
-  const imagemSrc = ev.imagem ?? projeto?.imagemDestaque ?? null;
+  const imagemSrc = ev.imagem?.src ?? projeto?.imagemDestaque.src ?? null;
+  const imagemCredito = ev.imagem?.credito ?? projeto?.imagemDestaque.credito;
 
   const corpo = (
     <>
@@ -185,6 +186,7 @@ function EventoCard({
       <div className={cn("overflow-hidden", projeto ? "mt-3" : "mt-auto pt-4")}>
         <ManagedImage
           src={imagemSrc}
+          credito={imagemCredito}
           ratio="16 / 9"
           sizes="(max-width: 639px) 250px, 280px"
           imgClassName="transition-transform duration-500 group-hover:scale-105"

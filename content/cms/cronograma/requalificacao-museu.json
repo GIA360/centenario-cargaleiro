@@ -5,6 +5,9 @@
   "local": "Museu Cargaleiro, Castelo Branco",
   "eixo": "expositiva",
   "projetoSlug": "requalificacao-museu",
-  "imagem": "/images/biblioteca/cronograma/requalificacao-museu/imagem.JPG",
+  "imagem": {
+    "imagem": "/images/biblioteca/cronograma/requalificacao-museu/imagem.JPG",
+    "credito": ""
+  },
   "porDefinir": false
 }

@@ -101,7 +101,8 @@ function Conteudo({
             className="absolute inset-0"
           >
             <ManagedImage
-              src={projeto.imagemDestaque}
+              src={projeto.imagemDestaque.src}
+              credito={projeto.imagemDestaque.credito}
               fill
               sizes="100vw"
               priority
@@ -318,16 +319,16 @@ function Conteudo({
           <div className="shell py-16">
             <p className="eyebrow text-cobalto/70">Imagens</p>
             <div className="mt-6 columns-2 gap-4 sm:columns-3">
-              {projeto.galeria?.map((src, i) => (
+              {projeto.galeria?.map((imagem, i) => (
                 <button
-                  key={src + i}
+                  key={`${imagem.src}-${i}`}
                   type="button"
                   onClick={() => setLightbox(i)}
                   className="group mb-4 block w-full break-inside-avoid overflow-hidden"
                 >
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
-                    src={src}
+                    src={imagem.src ?? ""}
                     alt=""
                     loading="lazy"
                     className="h-auto w-full transition-transform duration-500 group-hover:scale-105"
@@ -352,7 +353,7 @@ function Conteudo({
 
       {projeto.galeria && (
         <Lightbox
-          srcs={projeto.galeria}
+          imagens={projeto.galeria}
           indice={lightbox}
           onFechar={() => setLightbox(null)}
           onMudar={setLightbox}

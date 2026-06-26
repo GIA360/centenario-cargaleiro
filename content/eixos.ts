@@ -1,6 +1,7 @@
 // As duas missões — adaptador do CMS (missoes.json). Imagem por upload direto.
 
 import missoes from "./cms/missoes.json";
+import { normalizarImagem, type ImagemComCredito } from "./imagem";
 
 export type EixoId = "criacao" | "expositiva";
 
@@ -11,7 +12,7 @@ export interface Eixo {
   descricao: string;
   cor: string;
   corTexto: string;
-  imagemFundo: string | null;
+  imagemFundo: ImagemComCredito;
 }
 
 export const eixos: Record<EixoId, Eixo> = {
@@ -22,7 +23,7 @@ export const eixos: Record<EixoId, Eixo> = {
     descricao: missoes.criacao.descricao,
     cor: "#C25C84",
     corTexto: "#A8436E",
-    imagemFundo: missoes.criacao.imagemFundo ?? null,
+    imagemFundo: normalizarImagem(missoes.criacao.imagemFundo),
   },
   expositiva: {
     id: "expositiva",
@@ -31,7 +32,7 @@ export const eixos: Record<EixoId, Eixo> = {
     descricao: missoes.expositiva.descricao,
     cor: "#232A5E",
     corTexto: "#232A5E",
-    imagemFundo: missoes.expositiva.imagemFundo ?? null,
+    imagemFundo: normalizarImagem(missoes.expositiva.imagemFundo),
   },
 };
 

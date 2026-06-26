@@ -11,6 +11,7 @@ import {
 } from "framer-motion";
 import { listaEixos, missoesDescricaoSeccao, type Eixo } from "@/content/eixos";
 import { projetosPorEixo } from "@/content/projetos";
+import { CreditoImagem } from "@/components/ui/CreditoImagem";
 
 export function Missoes() {
   return (
@@ -120,7 +121,7 @@ function MissaoColuna({ eixo }: { eixo: Eixo }) {
 // missão e a indicação de onde entra a imagem.
 function MissaoFundo({ eixo }: { eixo: Eixo }) {
   const [erro, setErro] = useState(false);
-  const src = eixo.imagemFundo;
+  const { src, credito } = eixo.imagemFundo;
 
   if (erro || !src) {
     return (
@@ -144,13 +145,16 @@ function MissaoFundo({ eixo }: { eixo: Eixo }) {
   }
 
   return (
-    <Image
-      src={src}
-      alt=""
-      fill
-      sizes="(max-width: 768px) 100vw, 50vw"
-      className="object-cover"
-      onError={() => setErro(true)}
-    />
+    <>
+      <Image
+        src={src}
+        alt=""
+        fill
+        sizes="(max-width: 768px) 100vw, 50vw"
+        className="object-cover"
+        onError={() => setErro(true)}
+      />
+      <CreditoImagem texto={credito} />
+    </>
   );
 }

@@ -1,6 +1,8 @@
 {
   "titulo": "Polo da Cerâmica do Museu Cargaleiro",
-  "eixos": ["expositiva"],
+  "eixos": [
+    "expositiva"
+  ],
   "ancora": false,
   "local": "Museu Cargaleiro, Castelo Branco (antigo Quartel da GNR, Rua Vaz Preto)",
   "data": "9 de setembro de 2027",
@@ -8,8 +10,14 @@
   "ordem": 3,
   "resumo": "Exposição de longa duração que integra a oferta expositiva do Museu Cargaleiro e promove a divulgação da obra cerâmica do Mestre.",
   "introducao": "O Museu Cargaleiro inaugura, em Castelo Branco, o Polo da Cerâmica — uma grande exposição temporária de longa duração dedicada integralmente à leitura, estudo e divulgação da obra cerâmica de Manuel Cargaleiro.",
-  "imagemDestaque": "/images/biblioteca/projetos/polo-da-ceramica/imagemDestaque.jpg",
-  "imagemFlutuante": "/images/biblioteca/projetos/polo-da-ceramica/imagemFlutuante.jpg",
+  "imagemDestaque": {
+    "imagem": "/images/biblioteca/projetos/polo-da-ceramica/imagemDestaque.jpg",
+    "credito": ""
+  },
+  "imagemFlutuante": {
+    "imagem": "/images/biblioteca/projetos/polo-da-ceramica/imagemFlutuante.jpg",
+    "credito": ""
+  },
   "galeria": [],
   "descricao": [
     "Instalado num edifício autónomo, este polo apresenta uma exposição temporária de longa duração, inteiramente composta por obras do acervo da Fundação Manuel Cargaleiro. O projeto propõe uma retrospetiva alargada da produção cerâmica do artista, permitindo uma leitura aprofundada de um dos eixos fundamentais da sua criação.",

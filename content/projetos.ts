@@ -1,6 +1,7 @@
 // Projetos / iniciativas — adaptador do CMS (content/cms/projetos/*.json).
 
 import type { EixoId } from "./eixos";
+import { normalizarImagem, type ImagemComCredito } from "./imagem";
 
 export interface Indicador {
   valor: number;
@@ -33,9 +34,9 @@ export interface Projeto {
   resumo: string;
   introducao: string;
   descricao: string[];
-  imagemDestaque: string | null;
-  imagemFlutuante: string | null;
-  galeria?: string[];
+  imagemDestaque: ImagemComCredito;
+  imagemFlutuante: ImagemComCredito;
+  galeria?: ImagemComCredito[];
   parceiros?: string[];
   objetivos?: string[];
   juri?: { nome: string; papel: string }[];
@@ -80,9 +81,9 @@ function toProjeto(slug: string, data: Record<string, any>): Projeto {
     resumo: data.resumo,
     introducao: data.introducao,
     descricao: data.descricao,
-    imagemDestaque: data.imagemDestaque ?? null,
-    imagemFlutuante: data.imagemFlutuante ?? null,
-    galeria: vazioParaUndef(data.galeria),
+    imagemDestaque: normalizarImagem(data.imagemDestaque),
+    imagemFlutuante: normalizarImagem(data.imagemFlutuante),
+    galeria: vazioParaUndef(data.galeria)?.map(normalizarImagem),
     parceiros: vazioParaUndef(data.parceiros),
     objetivos: vazioParaUndef(data.objetivos),
     juri: vazioParaUndef(data.juri),

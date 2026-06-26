@@ -1,6 +1,9 @@
 {
   "logo": "/images/biblioteca/geral/logo.png",
-  "obraDestaque": "/images/biblioteca/geral/obraDestaque.jpg",
+  "obraDestaque": {
+    "imagem": "/images/biblioteca/geral/obraDestaque.jpg",
+    "credito": ""
+  },
   "heroSobretitulo": "Comemorações do Centenário · 1927 — 2027",
   "manifestoFrase": "Nove décadas a criar. Um legado para programar.\nEntre memória e criação, construir o futuro.",
   "heroFrase": "Nove décadas a criar. Um legado para programar.\nEntre memória e criação, construir o futuro.",

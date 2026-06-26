@@ -4,12 +4,18 @@
     "etiqueta": "Apoio à Criação",
     "nome": "Apoio à Criação e aos Jovens Artistas",
     "descricao": "Apoio à criação artística contemporânea: prémios, bolsas de estudo e novas plataformas que dão futuro à criação a partir do legado de Manuel Cargaleiro.",
-    "imagemFundo": "/images/biblioteca/missoes/criacao/imagemFundo.JPG"
+    "imagemFundo": {
+      "imagem": "/images/biblioteca/missoes/criacao/imagemFundo.JPG",
+      "credito": ""
+    }
   },
   "expositiva": {
     "etiqueta": "Programação Expositiva",
     "nome": "Programação Expositiva e Internacionalização",
     "descricao": "Exposições e circulação do legado: a obra do Mestre apresentada e estudada em novos territórios, do interior de Portugal ao circuito internacional.",
-    "imagemFundo": "/images/biblioteca/missoes/expositiva/imagemFundo.jpg"
+    "imagemFundo": {
+      "imagem": "/images/biblioteca/missoes/expositiva/imagemFundo.jpg",
+      "credito": ""
+    }
   }
 }

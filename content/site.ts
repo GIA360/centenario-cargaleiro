@@ -1,6 +1,7 @@
 // Configuração e textos transversais — adaptador do CMS (content/cms/geral.json).
 
 import geral from "./cms/geral.json";
+import { normalizarImagem } from "./imagem";
 
 export const site = {
   nome: "Centenário Manuel Cargaleiro",
@@ -12,7 +13,7 @@ export const site = {
 
 // Imagens globais (upload no CMS — secção «Geral»).
 export const logoSrc: string = geral.logo ?? "";
-export const obraSrc: string = geral.obraDestaque ?? "";
+export const obraDestaque = normalizarImagem(geral.obraDestaque);
 
 export const hero = {
   sobretitulo: geral.heroSobretitulo,

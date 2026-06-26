@@ -4,6 +4,9 @@
   "dataOrdenacao": "2027-03-27",
   "local": "Oficina de Artes Manuel Cargaleiro, Seixal",
   "eixo": "criacao",
-  "imagem": "/images/biblioteca/cronograma/oamc-seixal/imagem.jpg",
+  "imagem": {
+    "imagem": "/images/biblioteca/cronograma/oamc-seixal/imagem.jpg",
+    "credito": ""
+  },
   "porDefinir": false
 }

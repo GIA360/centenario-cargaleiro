@@ -12,8 +12,14 @@
   "ordem": 2,
   "resumo": "Quatro obras musicais originais e uma grande exposição cronológica, década a década.",
   "introducao": "Uma grande exposição e um programa de criação musical autoral: quatro obras musicais inspiradas no percurso artístico e biográfico de Manuel Cargaleiro, articuladas com uma exposição cronológica organizada década a década — nove décadas, do final dos anos 40 a 2024.",
-  "imagemDestaque": "/images/biblioteca/projetos/nove-decadas-um-legado/imagemDestaque.jpg",
-  "imagemFlutuante": "/images/biblioteca/projetos/nove-decadas-um-legado/imagemFlutuante.png",
+  "imagemDestaque": {
+    "imagem": "/images/biblioteca/projetos/nove-decadas-um-legado/imagemDestaque.jpg",
+    "credito": ""
+  },
+  "imagemFlutuante": {
+    "imagem": "/images/biblioteca/projetos/nove-decadas-um-legado/imagemFlutuante.png",
+    "credito": ""
+  },
   "galeria": [],
   "descricao": [
     "No Centro de Exposições do Pavilhão de Portugal, a obra de Manuel Cargaleiro e a música cruzam-se num único percurso."

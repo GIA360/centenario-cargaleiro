@@ -17,6 +17,25 @@ const img = (sub: string, label = "Imagem", description?: string) =>
     publicPath: `/images/biblioteca/${sub}`,
   });
 
+// Imagem com crédito — para fotografias que precisam de atribuição (autor,
+// instituição...). O crédito aparece discreto no canto inferior da imagem.
+const imgComCredito = (sub: string, label = "Imagem", description?: string) =>
+  fields.object(
+    {
+      imagem: fields.image({
+        label,
+        description,
+        directory: `public/images/biblioteca/${sub}`,
+        publicPath: `/images/biblioteca/${sub}`,
+      }),
+      credito: fields.text({
+        label: "Crédito da imagem",
+        description: "Ex.: © Nome do Fotógrafo. Deixar vazio se não for necessário.",
+      }),
+    },
+    { label },
+  );
+
 export default config({
   storage: { kind: "local" },
   ui: {
@@ -38,13 +57,11 @@ export default config({
           directory: "public/images/biblioteca/geral",
           publicPath: "/images/biblioteca/geral",
         }),
-        obraDestaque: fields.image({
-          label: "Imagem de fundo da frase de destaque",
-          description:
-            "Imagem horizontal grande (ocupa o ecrã). JPG ~1920×1080, leve (<600 KB).",
-          directory: "public/images/biblioteca/geral",
-          publicPath: "/images/biblioteca/geral",
-        }),
+        obraDestaque: imgComCredito(
+          "geral",
+          "Imagem de fundo da frase de destaque",
+          "Imagem horizontal grande (ocupa o ecrã). JPG ~1920×1080, leve (<600 KB).",
+        ),
         heroSobretitulo: fields.text({ label: "Hero — sobretítulo" }),
         manifestoFrase: fields.text({
           label: "Frase de destaque (2.ª secção)",
@@ -95,7 +112,7 @@ export default config({
             etiqueta: fields.text({ label: "Etiqueta" }),
             nome: fields.text({ label: "Nome completo" }),
             descricao: fields.text({ label: "Descrição", multiline: true }),
-            imagemFundo: img(
+            imagemFundo: imgComCredito(
               "missoes",
               "Fotografia de fundo",
               "Vertical / retrato (4:5), ~1400×1800. JPG.",
@@ -108,7 +125,7 @@ export default config({
             etiqueta: fields.text({ label: "Etiqueta" }),
             nome: fields.text({ label: "Nome completo" }),
             descricao: fields.text({ label: "Descrição", multiline: true }),
-            imagemFundo: img(
+            imagemFundo: imgComCredito(
               "missoes",
               "Fotografia de fundo",
               "Vertical / retrato (4:5), ~1400×1800. JPG.",
@@ -141,22 +158,18 @@ export default config({
         ordem: fields.integer({ label: "Ordem na lista", defaultValue: 0 }),
         resumo: fields.text({ label: "Resumo (cartão)", multiline: true }),
         introducao: fields.text({ label: "Introdução", multiline: true }),
-        imagemDestaque: fields.image({
-          label: "Imagem de destaque (banner)",
-          description:
-            "Banner horizontal 16:9, ~2000×1125, com o motivo ao centro. JPG.",
-          directory: "public/images/biblioteca/projetos",
-          publicPath: "/images/biblioteca/projetos",
-        }),
-        imagemFlutuante: fields.image({
-          label: "Imagem flutuante (pré-visualização)",
-          description:
-            "Surge a flutuar ao passar o rato na lista de projetos. Proporção 4:3, ~800×600. JPG.",
-          directory: "public/images/biblioteca/projetos",
-          publicPath: "/images/biblioteca/projetos",
-        }),
+        imagemDestaque: imgComCredito(
+          "projetos",
+          "Imagem de destaque (banner)",
+          "Banner horizontal 16:9, ~2000×1125, com o motivo ao centro. JPG.",
+        ),
+        imagemFlutuante: imgComCredito(
+          "projetos",
+          "Imagem flutuante (pré-visualização)",
+          "Surge a flutuar ao passar o rato na lista de projetos. Proporção 4:3, ~800×600. JPG.",
+        ),
         galeria: fields.array(
-          img("projetos", "Imagem", "Qualquer proporção — a galeria respeita o original."),
+          imgComCredito("projetos", "Imagem", "Qualquer proporção — a galeria respeita o original."),
           { label: "Galeria (upload)", itemLabel: () => "Imagem" },
         ),
         descricao: fields.array(fields.text({ label: "Parágrafo", multiline: true }), {
@@ -250,7 +263,7 @@ export default config({
           defaultValue: "expositiva",
         }),
         projetoSlug: fields.text({ label: "Liga ao projeto (slug, opcional)" }),
-        imagem: img(
+        imagem: imgComCredito(
           "cronograma",
           "Imagem do card",
           "Horizontal 16:9, ~800×450. Se vazia e houver projeto ligado, usa a imagem do projeto.",

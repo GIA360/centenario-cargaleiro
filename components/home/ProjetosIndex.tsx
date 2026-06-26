@@ -33,7 +33,7 @@ export function ProjetosIndex() {
   const projetoAtivo = ativo !== null ? lista[ativo] : null;
   const eixoAtivo = projetoAtivo ? eixos[projetoAtivo.eixos[0]] : null;
   const previewSrc = projetoAtivo
-    ? projetoAtivo.imagemFlutuante ?? projetoAtivo.imagemDestaque
+    ? projetoAtivo.imagemFlutuante.src ?? projetoAtivo.imagemDestaque.src
     : null;
 
   return (
@@ -110,7 +110,7 @@ export function ProjetosIndex() {
 
                   {/* miniatura (telemóvel / sem hover) */}
                   <span className="block w-24 shrink-0 sm:w-32 lg:hidden">
-                    <ManagedImage src={projeto.imagemDestaque} ratio="4 / 3" sizes="128px" />
+                    <ManagedImage src={projeto.imagemDestaque.src} ratio="4 / 3" sizes="128px" />
                   </span>
 
                   <span

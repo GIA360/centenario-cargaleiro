@@ -2,26 +2,27 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 import { useCallback, useEffect } from "react";
+import type { ImagemComCredito } from "@/content/imagem";
 
 interface LightboxProps {
-  srcs: string[];
+  imagens: ImagemComCredito[];
   indice: number | null;
   onFechar: () => void;
   onMudar: (i: number) => void;
 }
 
-export function Lightbox({ srcs, indice, onFechar, onMudar }: LightboxProps) {
+export function Lightbox({ imagens, indice, onFechar, onMudar }: LightboxProps) {
   const aberto = indice !== null;
 
   const anterior = useCallback(() => {
     if (indice === null) return;
-    onMudar((indice - 1 + srcs.length) % srcs.length);
-  }, [indice, srcs.length, onMudar]);
+    onMudar((indice - 1 + imagens.length) % imagens.length);
+  }, [indice, imagens.length, onMudar]);
 
   const seguinte = useCallback(() => {
     if (indice === null) return;
-    onMudar((indice + 1) % srcs.length);
-  }, [indice, srcs.length, onMudar]);
+    onMudar((indice + 1) % imagens.length);
+  }, [indice, imagens.length, onMudar]);
 
   useEffect(() => {
     if (!aberto) return;
@@ -94,12 +95,13 @@ export function Lightbox({ srcs, indice, onFechar, onMudar }: LightboxProps) {
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src={srcs[indice]}
+              src={imagens[indice].src ?? ""}
               alt=""
               className="max-h-[86vh] max-w-[92vw] object-contain"
             />
             <figcaption className="text-center text-sm text-white/50">
-              {indice + 1} / {srcs.length}
+              {indice + 1} / {imagens.length}
+              {imagens[indice].credito && <> · {imagens[indice].credito}</>}
             </figcaption>
           </motion.figure>
         </motion.div>

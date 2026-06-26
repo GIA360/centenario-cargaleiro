@@ -5,6 +5,9 @@
   "local": "Faculdade de Belas-Artes da Universidade de Lisboa",
   "eixo": "criacao",
   "projetoSlug": "premios-manuel-cargaleiro",
-  "imagem": "/images/biblioteca/cronograma/premios-cerimonia-catalogo/imagem.png",
+  "imagem": {
+    "imagem": "/images/biblioteca/cronograma/premios-cerimonia-catalogo/imagem.png",
+    "credito": ""
+  },
   "porDefinir": false
 }

@@ -1,6 +1,7 @@
 // Cronograma 2026–2028 — adaptador do CMS (content/cms/cronograma/*.json).
 
 import type { EixoId } from "./eixos";
+import { normalizarImagem, type ImagemComCredito } from "./imagem";
 
 export interface EventoCronograma {
   id: string;
@@ -10,7 +11,7 @@ export interface EventoCronograma {
   local: string;
   eixo?: EixoId;
   projetoSlug?: string;
-  imagem?: string | null;
+  imagem?: ImagemComCredito;
   porDefinir?: boolean;
 }
 
@@ -44,6 +45,6 @@ export const cronograma: EventoCronograma[] = RAW.map(({ id, data }) => ({
   local: data.local as string,
   eixo: (data.eixo as EixoId) || undefined,
   projetoSlug: (data.projetoSlug as string) || undefined,
-  imagem: (data.imagem as string) || null,
+  imagem: normalizarImagem(data.imagem),
   porDefinir: Boolean(data.porDefinir),
 })).sort((a, b) => a.dataOrdenacao.localeCompare(b.dataOrdenacao));

@@ -4,6 +4,9 @@
   "dataOrdenacao": "2028-12-31",
   "local": "Ravello, Itália",
   "eixo": "expositiva",
-  "imagem": "/images/biblioteca/cronograma/museo-diffuso-ravello/imagem.jpg",
+  "imagem": {
+    "imagem": "/images/biblioteca/cronograma/museo-diffuso-ravello/imagem.jpg",
+    "credito": ""
+  },
   "porDefinir": true
 }

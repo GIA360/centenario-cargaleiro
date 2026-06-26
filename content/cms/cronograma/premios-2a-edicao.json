@@ -4,6 +4,9 @@
   "dataOrdenacao": "2027-10-01",
   "local": "Fundação Manuel Cargaleiro",
   "eixo": "criacao",
-  "imagem": "/images/biblioteca/cronograma/premios-2a-edicao/imagem.JPG",
+  "imagem": {
+    "imagem": "/images/biblioteca/cronograma/premios-2a-edicao/imagem.JPG",
+    "credito": ""
+  },
   "porDefinir": false
 }

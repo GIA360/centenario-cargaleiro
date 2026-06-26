@@ -10,7 +10,8 @@ import {
   useReducedMotion,
   useSpring,
 } from "framer-motion";
-import { manifestoFrase, obraSrc } from "@/content/site";
+import { manifestoFrase, obraDestaque } from "@/content/site";
+import { CreditoImagem } from "@/components/ui/CreditoImagem";
 
 const PALAVRAS = manifestoFrase.split(" ");
 
@@ -45,9 +46,9 @@ export function Manifesto() {
       onPointerMove={reduzir ? undefined : aoMover}
       className="relative flex min-h-[55vh] items-center overflow-hidden bg-cobaltoFundo py-16 sm:py-[74px]"
     >
-      {obraSrc && (
+      {obraDestaque.src && (
         <Image
-          src={obraSrc}
+          src={obraDestaque.src}
           alt=""
           fill
           sizes="100vw"
@@ -84,6 +85,8 @@ export function Manifesto() {
           ))}
         </p>
       </div>
+
+      <CreditoImagem texto={obraDestaque.credito} />
     </section>
   );
 }
