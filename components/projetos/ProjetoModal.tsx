@@ -36,6 +36,7 @@ function Conteudo({
   const scrollRef = useRef<HTMLDivElement>(null);
   const [lightbox, setLightbox] = useState<number | null>(null);
   const cor = eixos[projeto.eixos[0]].cor;
+  const temGaleria = !!(projeto.galeria && projeto.galeria.length > 0);
 
   const { scrollY, scrollYProgress } = useScroll({ container: scrollRef });
   const heroY = useTransform(scrollY, [0, 600], [0, 140]);
@@ -313,11 +314,11 @@ function Conteudo({
         )}
 
         {/* galeria */}
-        {projeto.galeria && projeto.galeria.length > 0 && (
+        {temGaleria && (
           <div className="shell py-16">
             <p className="eyebrow text-cobalto/70">Imagens</p>
             <div className="mt-6 columns-2 gap-4 sm:columns-3">
-              {projeto.galeria.map((src, i) => (
+              {projeto.galeria?.map((src, i) => (
                 <button
                   key={src + i}
                   type="button"
@@ -337,7 +338,7 @@ function Conteudo({
           </div>
         )}
 
-        <div className="shell pb-20">
+        <div className={temGaleria ? "shell pb-20" : "shell pt-16 pb-20"}>
           <button
             type="button"
             onClick={onFechar}
