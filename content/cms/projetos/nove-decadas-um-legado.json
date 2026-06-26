@@ -46,17 +46,7 @@
       "label": "núcleos expositivos"
     }
   ],
-  "instituicoesAcervo": [
-    "Assembleia da República",
-    "Caixa Geral de Depósitos — Culturgest",
-    "Câmara Municipal de Vila Velha de Ródão",
-    "Câmara Municipal do Seixal",
-    "Fundação Millennium BCP",
-    "Fundação Manuel Cargaleiro",
-    "Museu de Arte Contemporânea Armando Martins",
-    "Museu Nacional do Azulejo",
-    "Coleções privadas"
-  ],
+  "instituicoesAcervo": [],
   "componentes": [
     {
       "chave": "A",
