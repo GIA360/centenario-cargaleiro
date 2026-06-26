@@ -1,8 +1,8 @@
 {
   "logo": "/images/biblioteca/geral/logo.png",
   "obraDestaque": {
-    "imagem": "/images/biblioteca/geral/obraDestaque.jpg",
-    "credito": ""
+    "imagem": "/images/biblioteca/geral/obraDestaque/imagem.jpg",
+    "credito": "© Beira Baixa TV"
   },
   "heroSobretitulo": "Comemorações do Centenário · 1927 — 2027",
   "manifestoFrase": "Nove décadas a criar. Um legado para programar.\nEntre memória e criação, construir o futuro.",

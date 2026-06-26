@@ -11,12 +11,11 @@
   "resumo": "Exposição de longa duração que integra a oferta expositiva do Museu Cargaleiro e promove a divulgação da obra cerâmica do Mestre.",
   "introducao": "O Museu Cargaleiro inaugura, em Castelo Branco, o Polo da Cerâmica — uma grande exposição temporária de longa duração dedicada integralmente à leitura, estudo e divulgação da obra cerâmica de Manuel Cargaleiro.",
   "imagemDestaque": {
-    "imagem": "/images/biblioteca/projetos/polo-da-ceramica/imagemDestaque.jpg",
-    "credito": ""
+    "imagem": "/images/biblioteca/projetos/polo-da-ceramica/imagemDestaque/imagem.jpg",
+    "credito": "Imagem 3D - BN Studio"
   },
   "imagemFlutuante": {
-    "imagem": "/images/biblioteca/projetos/polo-da-ceramica/imagemFlutuante.jpg",
-    "credito": ""
+    "imagem": "/images/biblioteca/projetos/polo-da-ceramica/imagemFlutuante/imagem.jpg"
   },
   "galeria": [],
   "descricao": [

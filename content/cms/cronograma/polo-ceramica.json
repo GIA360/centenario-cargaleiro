@@ -5,5 +5,8 @@
   "local": "Castelo Branco",
   "eixo": "expositiva",
   "projetoSlug": "polo-da-ceramica",
+  "imagem": {
+    "credito": "Imagem 3D: BN Studio"
+  },
   "porDefinir": false
 }

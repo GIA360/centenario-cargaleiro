@@ -5,5 +5,8 @@
   "local": "Pavilhão de Portugal, Lisboa",
   "eixo": "criacao",
   "projetoSlug": "nove-decadas-um-legado",
+  "imagem": {
+    "credito": "© Universidade de Lisboa"
+  },
   "porDefinir": false
 }

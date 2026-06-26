@@ -12,17 +12,15 @@
   "resumo": "Prémios que apoiam a criação contemporânea e as novas gerações de artistas.",
   "introducao": "No âmbito do Programa Oficial das Comemorações do Centenário de Manuel Cargaleiro, a Fundação inicia uma nova etapa da sua missão, reforçando o compromisso com o apoio à criação contemporânea e com a valorização das novas gerações de artistas.",
   "imagemDestaque": {
-    "imagem": "/images/biblioteca/projetos/premios-manuel-cargaleiro/imagemDestaque.JPG",
-    "credito": ""
+    "imagem": "/images/biblioteca/projetos/premios-manuel-cargaleiro/imagemDestaque/imagem.JPG",
+    "credito": "© Fundação Manuel Cargaleiro"
   },
   "imagemFlutuante": {
-    "imagem": "/images/biblioteca/projetos/premios-manuel-cargaleiro/imagemFlutuante.png",
-    "credito": ""
+    "imagem": "/images/biblioteca/projetos/premios-manuel-cargaleiro/imagemFlutuante/imagem.png"
   },
   "galeria": [
     {
-      "imagem": "/images/biblioteca/projetos/premios-manuel-cargaleiro/galeria/0.png",
-      "credito": ""
+      "imagem": "/images/biblioteca/projetos/premios-manuel-cargaleiro/galeria/0/imagem.png"
     }
   ],
   "descricao": [

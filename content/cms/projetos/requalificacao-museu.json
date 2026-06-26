@@ -12,12 +12,11 @@
   "resumo": "Nova exposição permanente, integrando mediação sonora e narrativa biográfica.",
   "introducao": "Renovação da exposição permanente do Museu Cargaleiro, que passará a integrar a narrativa e os equipamentos de mediação sonora desenvolvidos para a exposição do Centenário.",
   "imagemDestaque": {
-    "imagem": "/images/biblioteca/projetos/requalificacao-museu/imagemDestaque.JPG",
-    "credito": ""
+    "imagem": "/images/biblioteca/projetos/requalificacao-museu/imagemDestaque/imagem.JPG",
+    "credito": "© Fundação Manuel Cargaleiro"
   },
   "imagemFlutuante": {
-    "imagem": "/images/biblioteca/projetos/requalificacao-museu/imagemFlutuante.JPG",
-    "credito": ""
+    "imagem": "/images/biblioteca/projetos/requalificacao-museu/imagemFlutuante/imagem.JPG"
   },
   "galeria": [],
   "descricao": [

@@ -5,5 +5,8 @@
   "local": "Museu Cargaleiro, Castelo Branco",
   "eixo": "criacao",
   "projetoSlug": "premios-manuel-cargaleiro",
+  "imagem": {
+    "credito": "© Fundação Manuel Cargaleiro"
+  },
   "porDefinir": false
 }

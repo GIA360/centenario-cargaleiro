@@ -12,49 +12,17 @@
   "resumo": "Exposição inaugural do Centenário, no território onde nasceu Manuel Cargaleiro.",
   "introducao": "A exposição \"O Princípio do Gesto – Manuel Cargaleiro\" inaugura as Comemorações do Centenário, assinalando os 100 anos do nascimento do artista.",
   "imagemDestaque": {
-    "imagem": "/images/biblioteca/projetos/principio-do-gesto/imagemDestaque.png",
-    "credito": ""
+    "imagem": "/images/biblioteca/projetos/principio-do-gesto/imagemDestaque/imagem.png"
   },
   "imagemFlutuante": {
-    "imagem": "/images/biblioteca/projetos/principio-do-gesto/imagemFlutuante.jpg",
-    "credito": ""
+    "imagem": "/images/biblioteca/projetos/principio-do-gesto/imagemFlutuante/imagem.jpg"
   },
   "galeria": [
     {
-      "imagem": "/images/biblioteca/projetos/principio-do-gesto/galeria/0.jpg",
-      "credito": ""
+      "imagem": "/images/biblioteca/projetos/principio-do-gesto/galeria/0/imagem.jpg"
     },
     {
-      "imagem": "/images/biblioteca/projetos/principio-do-gesto/galeria/1.jpg",
-      "credito": ""
-    },
-    {
-      "imagem": "/images/biblioteca/projetos/principio-do-gesto/galeria/2.jpg",
-      "credito": ""
-    },
-    {
-      "imagem": "/images/biblioteca/projetos/principio-do-gesto/galeria/3.jpg",
-      "credito": ""
-    },
-    {
-      "imagem": "/images/biblioteca/projetos/principio-do-gesto/galeria/4.jpg",
-      "credito": ""
-    },
-    {
-      "imagem": "/images/biblioteca/projetos/principio-do-gesto/galeria/5.jpg",
-      "credito": ""
-    },
-    {
-      "imagem": "/images/biblioteca/projetos/principio-do-gesto/galeria/6.jpg",
-      "credito": ""
-    },
-    {
-      "imagem": "/images/biblioteca/projetos/principio-do-gesto/galeria/7.jpg",
-      "credito": ""
-    },
-    {
-      "imagem": "/images/biblioteca/projetos/principio-do-gesto/galeria/8.jpg",
-      "credito": ""
+      "imagem": "/images/biblioteca/projetos/principio-do-gesto/galeria/1/imagem.jpg"
     }
   ],
   "descricao": [

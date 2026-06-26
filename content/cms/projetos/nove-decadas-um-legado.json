@@ -13,12 +13,11 @@
   "resumo": "Quatro obras musicais originais e uma grande exposição cronológica, década a década.",
   "introducao": "Uma grande exposição e um programa de criação musical autoral: quatro obras musicais inspiradas no percurso artístico e biográfico de Manuel Cargaleiro, articuladas com uma exposição cronológica organizada década a década — nove décadas, do final dos anos 40 a 2024.",
   "imagemDestaque": {
-    "imagem": "/images/biblioteca/projetos/nove-decadas-um-legado/imagemDestaque.jpg",
-    "credito": ""
+    "imagem": "/images/biblioteca/projetos/nove-decadas-um-legado/imagemDestaque/imagem.jpg",
+    "credito": "© Universidade de Lisboa"
   },
   "imagemFlutuante": {
-    "imagem": "/images/biblioteca/projetos/nove-decadas-um-legado/imagemFlutuante.png",
-    "credito": ""
+    "imagem": "/images/biblioteca/projetos/nove-decadas-um-legado/imagemFlutuante/imagem.png"
   },
   "galeria": [],
   "descricao": [
